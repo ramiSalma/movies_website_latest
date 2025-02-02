@@ -11,7 +11,7 @@ export const Reducer = (state= init , action)=>{
         case REMOVE_USER:
             return state.filter((e)=> e.id === action.payload)
         case UPDATE_USER : 
-            return state.map((e) => e.id === actyion.payload.id ? { ...e , ...action.payload} : e)
+            return state.map((e) => e.id === action.payload.id ? { ...e , ...action.payload} : e)
         default :
             return state
     }

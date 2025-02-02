@@ -1,7 +1,9 @@
 import React from 'react'
+import { Store } from './store'
 
-const Table = () => {
-    
+const table = () => {
+    const users = Store.getState()
+    console.log(users);
   return (
     <div>
       
@@ -9,4 +11,5 @@ const Table = () => {
   )
 }
 
-export default Table
+export default table
+

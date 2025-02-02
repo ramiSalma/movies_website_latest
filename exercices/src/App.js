@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Nav />} >
 
-            <Route index element={<DataApi/>} />
+            {/* <Route index element={<DataApi/>} />
             <Route path='/create' element={<Add_Data_Api/>} />
             <Route path='/users' element={<Users/>} />
             <Route path='/users/adduser' element={<Adduser/>} />
@@ -29,7 +29,7 @@ function App() {
 
             <Route path='/clients' element={<Clients/>} />
             <Route path='/clients/addclient' element={<AddClient/>} />
-            <Route path='/clients/edit/:id' element={<ClientEdit/>} />
+            <Route path='/clients/edit/:id' element={<ClientEdit/>} /> */}
           </Route>
         </Routes>
       </BrowserRouter>
