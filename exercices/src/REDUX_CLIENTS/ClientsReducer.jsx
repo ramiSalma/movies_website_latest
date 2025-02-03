@@ -1,3 +1,4 @@
+import { produce } from "immer";
 import {ADD_CLIENT , DELETE_CLIENT , UPDATE_CLIENT} from "./clinetsActions"
 
 
@@ -37,25 +38,60 @@ const initialState = {
     ]
 };
   
-export   const ClientsReducer = (state = initialState, action) => {
+export   const ClientsReducer = (state = initialState, action) => 
+  produce(state, (draft)=>{
     switch (action.type) {
       case ADD_CLIENT:
-        //return { ...state, clinets: [...state.clients ,  action.payload]};
-        return { ...state, clients: [...state.clients, action.payload] };
-
+        
+        draft.clients.push(action.payload)
+        break
 
       case UPDATE_CLIENT :
-        return {
-            ...state,
-            clients: state.clients.map((client) =>
+        draft.clients = draft.clients.map((client) =>
               client.id === action.payload.id ? { ...client, ...action.payload } : client
-            ),
-          };
+            )
+         break 
 
       case DELETE_CLIENT:
-        return {...state , clients : state.clients.filter((item) => item.id !== action.payload)};
+        draft.clients = draft.clients.filter((e) => e.id !== action.payload)
+        break
       default:
-        return state;
+        break
     }
-  };
+  })
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+// export   const ClientsReducer = (state = initialState, action) => {
+//     switch (action.type) {
+//       case ADD_CLIENT:
+//         //return { ...state, clinets: [...state.clients ,  action.payload]};
+//         return { ...state, clients: [...state.clients, action.payload] };
+
+
+//       case UPDATE_CLIENT :
+//         return {
+//             ...state,
+//             clients: state.clients.map((client) =>
+//               client.id === action.payload.id ? { ...client, ...action.payload } : client
+//             ),
+//           };
+
+//       case DELETE_CLIENT:
+//         return {...state , clients : state.clients.filter((item) => item.id !== action.payload)};
+//       default:
+//         return state;
+//     }
+//   };
   

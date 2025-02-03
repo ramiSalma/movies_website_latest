@@ -7,7 +7,7 @@ export const ClientEdit = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
   const {id} = useParams()
-  const user = useSelector(state => state.ClientsReducer.clients.find((u)=>u.id == Number(id)))
+  const user = useSelector(state => state.clients.find((u)=>u.id == Number(id)))
   const [data, setData] = useState({
     name: {firstname : ''},
     age : ''

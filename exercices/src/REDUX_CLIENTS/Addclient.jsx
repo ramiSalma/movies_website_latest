@@ -8,7 +8,7 @@ import { add_client } from './clinetsActions';
 export const AddClient = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const users = useSelector(state => state.ClientsReducer.clients)
+  const users = useSelector(state => state.clients)
   const [data, setData] = useState({
     name: '',
     age : ''

@@ -5,7 +5,7 @@ import { delete_client } from "./clinetsActions";
 
 
 export const Clients = () => {
-  const clients = useSelector((state) => state.ClientsReducer.clients);
+  const clients = useSelector((state) => state.clients);
   const dispatch = useDispatch();
   const handleClick =(id)=>{
     dispatch(delete_client(id))

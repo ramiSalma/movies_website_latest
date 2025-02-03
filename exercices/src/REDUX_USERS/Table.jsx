@@ -4,7 +4,7 @@ import { delete_user } from "./usersActions";
 import { Link } from "react-router-dom";
 
 export const Users = () => {
-  const users = useSelector((state) => state.UsersReducer);
+  const users = useSelector((state) => state);
   const dispatch = useDispatch();
   const handleClick =(id)=>{
     dispatch(delete_user(id))

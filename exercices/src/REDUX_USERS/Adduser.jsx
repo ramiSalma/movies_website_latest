@@ -7,7 +7,7 @@ import { add_user } from './usersActions';
 const Adduser = () => {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  const users = useSelector(state => state.UsersReducer)
+  const users = useSelector(state => state)
   const [data, setData] = useState({
     name: '',
     age : ''
@@ -22,7 +22,7 @@ const Adduser = () => {
         alert('Please fill all fields')
       }else{
 
-        dispatch(add_user({ id: users.length + 1, name: data.name , age: data.age}));
+        dispatch(add_user({ id: users[users.length - 1].id + 1, name: data.name , age: data.age}));
         navigate("/users")
       }
       

@@ -77,21 +77,21 @@ const initialState = {
       case FETCH_USERS_FAILURE:
         return { ...state, loading: false, error: action.payload };
 
-      case  FETCH_DELETE :
-        return {...state , data : state.data.filter((item) => item.id !== action.payload)};
+      // case  FETCH_DELETE :
+      //   return {...state , data : state.data.filter((item) => item.id !== action.payload)};
 
 
-        case FETCH_ADD:
-            return { ...state, data: [...state.data, action.payload] };
+      //   case FETCH_ADD:
+      //       return { ...state, data: [...state.data, action.payload] };
     
 
-        case FETCH_UPDATE:
-        return {
-            ...state,
-            data: state.data.map((client) =>
-                client.id === action.payload.id ? { ...client, ...action.payload } : client
-            ),
-            };  
+      //   case FETCH_UPDATE:
+      //   return {
+      //       ...state,
+      //       data: state.data.map((client) =>
+      //           client.id === action.payload.id ? { ...client, ...action.payload } : client
+      //       ),
+      //       };  
 
       default:
         return state;

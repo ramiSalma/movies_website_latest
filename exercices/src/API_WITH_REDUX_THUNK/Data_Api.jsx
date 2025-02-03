@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export const DataApi = () => {
   const dispatch = useDispatch();
-  const { data, loading, error } = useSelector((state) => state.ThunkReducer);
+  const { data, loading, error } = useSelector((state) => state);
     console.log(data);
 
   useEffect(() => {
