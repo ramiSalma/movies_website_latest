@@ -1,18 +1,4 @@
-
-
-
-// import { UsersReducer } from "../REDUX_USERS/USersReducer";
-// import { ClientsReducer } from "../REDUX_CLIENTS/ClientsReducer";
-import {  applyMiddleware, createStore } from "redux";
-import { ThunkReducer } from "../API_WITH_REDUX_THUNK/Thunk_Reducer";
-import thunk from "redux-thunk";
-import { composeWithDevTools } from "redux-devtools-extension";
-// const rootreducer = combineReducers({
-//     ClientsReducer ,
-//     UsersReducer ,
-//     ThunkReducer
-// })
-export const Store = createStore(
-    ThunkReducer
-    ,composeWithDevTools(applyMiddleware(thunk)) 
-);
+import {createStore} from 'redux'
+import {usersReducer} from '../REDUX/usersReducer'
+export const Store =  createStore(usersReducer,
+     window.__REDUX_DEVTOOLS_SESSION && window.__REDUX_DEVTOOLS_SESSION())

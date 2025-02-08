@@ -6,20 +6,21 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import { Provider } from 'react-redux';
 
-import { Store } from './STORE/store.jsx';
-
+import {Provider} from 'react-redux'
 
 
 
+import {createStore} from 'redux'
+import { usersReduer } from './REDUX/usersReducer';
+
+ const Store =  createStore(usersReduer)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider store={Store}>
-      <App />
-    </Provider>
-  </React.StrictMode>
-);
+  <Provider store={Store}>
+    <App/>
+
+  </Provider>
+ );
 reportWebVitals();
