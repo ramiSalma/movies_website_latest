@@ -8,13 +8,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import {Provider} from 'react-redux'
+import { createSlice } from "@reduxjs/toolkit";
+import { ClientsSlice } from "./RTK/clientsReducer";
 
-
-
-import {createStore} from 'redux'
-import { usersReduer } from './REDUX/usersReducer';
-
- const Store =  createStore(usersReduer)
+export const  Store = createSlice({
+     reducer :{
+          clients : ClientsSlice
+     }
+})
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

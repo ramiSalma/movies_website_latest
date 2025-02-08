@@ -7,7 +7,7 @@ const Adduser = () => {
     const navigate = useNavigate()
     const users = useSelector(state => state.users)
     const [data,setData] = useState({
-       
+        id : users[users.length -1].id + 1,
         nom : '',
         age : ''
 
@@ -21,11 +21,7 @@ const Adduser = () => {
         if( !data.nom || !data.age){
             alert('fill all the inputs')
         }else{
-            dispatch(onAdd({
-                id : users[users.length -1].id + 1, 
-                nom : data.nom ,
-                age : data.age
-            }))
+            dispatch(onAdd(data))
             navigate('/users')
         }
         
