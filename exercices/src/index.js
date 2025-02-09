@@ -7,11 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-
+import {Provider} from 'react-redux'
+import { Store } from './STORE/store';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App/>
+  <Provider store={Store}>
+     <App/>
+  </Provider>
+   
  );
 reportWebVitals();
