@@ -1,10 +1,11 @@
 import React from 'react'
 import { Routes , Route, BrowserRouter} from 'react-router-dom'
 import Nav from './navbar/nav'
+import { ClientsTable } from './RTK/ClientsTable'
 // import UsersTable from './REDUX/UsersTable'
 // import Adduser from './REDUX/Adduser'
 // import { Updateuser } from './REDUX/update'
-import { ClientsTable } from './RTK/ClientsTable'
+
 const App = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const App = () => {
           <Route path='/add' element={<Adduser/>} />
           <Route path='/update/:id' element={<Updateuser/>} /> */}
 
-          <Route path='/clients' element={<ClientsTable/>} />
+     
         </Route>
       </Routes>
       </BrowserRouter>
