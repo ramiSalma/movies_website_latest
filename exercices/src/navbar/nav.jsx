@@ -13,6 +13,12 @@ const Nav = () => {
           <li className="nav-item">
               <Link to={'/users'} className="nav-link fs-5 text-warning " >users</Link>
           </li>
+          <li className="nav-item">
+              <Link to={'/annonces'} className="nav-link fs-5 text-warning " >annonces</Link>
+          </li>
+          <li className="nav-item">
+              <Link to={'/annoncesTable'} className="nav-link fs-5 text-warning " >annonces table</Link>
+          </li>
       </ul>
         <Outlet/>
     </div>

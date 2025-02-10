@@ -6,6 +6,9 @@ import { AddClient } from './RTK/addClient'
 import { UpdateComp } from './RTK/updateClient'
 import Products from './API/Products'
 import UsersTable from './API/DataThunk'
+import DisplayAnnonce from './REGIONAL_FES_MEK/DisplayAnnonce'
+import AnnoncesTable from './REGIONAL_FES_MEK/AnnoncesTable'
+import DetailsAnnonce from './REGIONAL_FES_MEK/DetailsAnnonce'
 // import UsersTable from './REDUX/UsersTable'
 // import Adduser from './REDUX/Adduser'
 // import { Updateuser } from './REDUX/update'
@@ -18,6 +21,9 @@ const App = () => {
         <Route path='/' element={<Nav/>}>
         <Route index element={<Products/>} />
         <Route path='/users' element={<UsersTable/>} />
+        <Route path='/annonces' element={<DisplayAnnonce/>} />
+        <Route path='/annoncestable' element={<AnnoncesTable/>} />
+        <Route path='/detailannonce/:id' element={<DetailsAnnonce/>} />
           {/* <Route path='/users' element={<UsersTable/>} />
           <Route path='/add' element={<Adduser/>} />
           <Route path='/update/:id' element={<Updateuser/>} /> */}
