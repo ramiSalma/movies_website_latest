@@ -27,27 +27,88 @@ const moviesData = [{
   "episodes": 73
 },
 {
-  "_id": 2,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
-  "video": "videos/lucifer.mp4",
-  "title": "Lucifer",
-  "year": 2016,
-  "date": "2016-01-25",
-  "ageLimit": "16+",
-  "length": "45m per episode",
+    _id: 153,
+    titleImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-Casa-de-Papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+    bgImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/La-casa-de-papel-Season-1.jpg",
+    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-casa-de-papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+    video: "videos/la-casa-de-papel.mp4",
+    title: "La Casa de Papel",
+    year: 2017,
+    date: "2017-05-02",
+    ageLimit: "16+",
+    length: "50m per episode",
+    category: ["Crime", "Thriller", "Drama"],
+    type: "Series",
+    description: "A criminal mastermind, The Professor, plans the biggest heist in history, recruiting eight people with unique skills.",
+    active: true,
+    rating: 8.3,
+    episodes: 41
+  },
+  {
+  "_id": 100,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://images.moviesanywhere.com/72628135a01e28dbd3de510a70f39ad1/51843284-b466-458a-968d-21a5038f39be.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/cruella-trailer.mp4",
+  "title": "Cruella",
+  "year": 2021,
+  "date": "2021-05-28",
+  "ageLimit": "13+",
+  "length": "2h 14m",
   "category": [
     "Crime",
-    "Drama",
-    "Fantasy"
+    "Comedy",
+    "Drama"
   ],
-  "type": "Series",
-  "description": "The Devil relocates to Los Angeles and opens a nightclub while helping the LAPD solve crimes.",
-  "active": true,
-  "rating": 8.1,
-  "episodes": 93
+  "type": "Movie",
+  "description": "Young Estella navigates 1970s London, aspiring to become a fashion designer. As she grows, her rebellious and cunning nature emerges, leading her to embrace her alter ego, Cruella, in a world of high fashion, rivalry, and personal ambition.",
+  "active": true
 },
+{
+  "_id": 10,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/suicide-squad.mp4",
+  "title": "Suicide Squad",
+  "year": 2016,
+  "date": "2016-08-05",
+  "ageLimit": "16+",
+  "length": "2h 3m",
+  "category": [
+    "Action",
+    "Adventure",
+    "DC"
+  ],
+  "type": "Movie",
+  "description": "A secret government agency recruits imprisoned supervillains for dangerous missions in exchange for commuted sentences.",
+  "active": true,
+  "rating": 6,
+  "collection": "DC"
+},
+{
+  "_id": 15,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/deadpool-wolverine.mp4",
+  "title": "Deadpool & Wolverine",
+  "year": 2024,
+  "date": "2024-06-07",
+  "ageLimit": "18+",
+  "length": "2h 10m",
+  "category": [
+    "Action",
+    "Comedy",
+    "Marvel"
+  ],
+  "type": "Movie",
+  "description": "Deadpool teams up with Wolverine in an action-packed and hilarious adventure across the Marvel universe.",
+  "active": true,
+  "rating": 7.8,
+  "collection": "Marvel"
+},
+
 {
   "_id": 3,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/11/%D9%81%D9%8A%D9%84%D9%85-Black-Adam-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
@@ -138,7 +199,7 @@ const moviesData = [{
 },
 {
   "_id": 7,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/05/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/06/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/05/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/06/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/shazam.mp4",
@@ -202,28 +263,7 @@ const moviesData = [{
   "rating": 6.1,
   "collection": "DC"
 },
-{
-  "_id": 10,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-  "video": "videos/suicide-squad.mp4",
-  "title": "Suicide Squad",
-  "year": 2016,
-  "date": "2016-08-05",
-  "ageLimit": "16+",
-  "length": "2h 3m",
-  "category": [
-    "Action",
-    "Adventure",
-    "DC"
-  ],
-  "type": "Movie",
-  "description": "A secret government agency recruits imprisoned supervillains for dangerous missions in exchange for commuted sentences.",
-  "active": true,
-  "rating": 6,
-  "collection": "DC"
-},
+
 {
   "_id": 11,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Batman-v-Superman-Dawn-of-Justice-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
@@ -312,28 +352,7 @@ const moviesData = [{
   "rating": 7.5,
   "collection": "Marvel"
 },
-{
-  "_id": 15,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-  "video": "videos/deadpool-wolverine.mp4",
-  "title": "Deadpool & Wolverine",
-  "year": 2024,
-  "date": "2024-06-07",
-  "ageLimit": "18+",
-  "length": "2h 10m",
-  "category": [
-    "Action",
-    "Comedy",
-    "Marvel"
-  ],
-  "type": "Movie",
-  "description": "Deadpool teams up with Wolverine in an action-packed and hilarious adventure across the Marvel universe.",
-  "active": true,
-  "rating": 7.8,
-  "collection": "Marvel"
-},
+
 {
   "_id": 16,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
@@ -399,6 +418,28 @@ const moviesData = [{
   "active": true,
   "rating": 6.6,
   "collection": "Marvel"
+},
+{
+  "_id": 2,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "video": "videos/lucifer.mp4",
+  "title": "Lucifer",
+  "year": 2016,
+  "date": "2016-01-25",
+  "ageLimit": "16+",
+  "length": "45m per episode",
+  "category": [
+    "Crime",
+    "Drama",
+    "Fantasy"
+  ],
+  "type": "Series",
+  "description": "The Devil relocates to Los Angeles and opens a nightclub while helping the LAPD solve crimes.",
+  "active": true,
+  "rating": 8.1,
+  "episodes": 93
 },
 {
   "_id": 19,
@@ -724,7 +765,7 @@ const moviesData = [{
 {
   "_id": 34,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "video": "videos/harry4-trailer.mp4",
   "title": "Harry Potter and the Goblet of Fire",
@@ -806,9 +847,9 @@ const moviesData = [{
 },
 {
   "_id": 38,
-  "titleImg": "https://upload.wikimedia.org/path/to/rogue-nation-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BM2Y4.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZmU5.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-%E2%80%93-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/roguenation-trailer.mp4",
   "title": "Rogue Nation",
   "year": 2025,
@@ -864,88 +905,28 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 41,
-  "titleImg": "https://upload.wikimedia.org/path/to/reacher-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZDkx.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZjY5.jpg",
-  "video": "videos/reacher-trailer.mp4",
-  "title": "Reacher: Never Go Back Again",
-  "year": 2025,
-  "date": "2025-09-19",
-  "ageLimit": "16+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Mystery"
-  ],
-  "type": "Movie",
-  "description": "Jack Reacher finds himself entangled in a deadly conspiracy with military ties.",
-  "rating": 7.9,
-  "active": true
-},
-{
-  "_id": 42,
-  "titleImg": "https://upload.wikimedia.org/path/to/extraction3-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BN2Y4.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BYjIz.jpg",
-  "video": "videos/extraction3-trailer.mp4",
-  "title": "Extraction 3",
-  "year": 2025,
-  "date": "2025-07-04",
-  "ageLimit": "18+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Thriller"
-  ],
-  "type": "Movie",
-  "description": "Tyler Rake is back for another dangerous extraction mission in enemy territory.",
-  "rating": 8.4,
-  "active": true
-},
-{
   "_id": 43,
-  "titleImg": "https://upload.wikimedia.org/path/to/grey-man2-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BNzBh.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZGY3.jpg",
-  "video": "videos/greyman2-trailer.mp4",
-  "title": "The Gray Man 2",
-  "year": 2025,
-  "date": "2025-05-09",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-The-Shadow-Strays-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-The-Shadow-Strays-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-The-Shadow-Strays-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/shadow-strays-trailer.mp4",
+  "title": "Shadow Strays",
+  "year": 2024,
+  "date": "2024-09-15",
   "ageLimit": "16+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Thriller"
-  ],
+  "length": "2h 7m",
+  "category": ["Action", "Thriller", "Mystery"],
   "type": "Movie",
-  "description": "Court Gentry faces a new shadow organization that threatens global stability.",
-  "rating": 8,
-  "active": true
-},
-{
-  "_id": 44,
-  "titleImg": "https://upload.wikimedia.org/path/to/expendables5-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BMzU4.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BODQz.jpg",
-  "video": "videos/expendables5-trailer.mp4",
-  "title": "The Expendables 5",
-  "year": 2025,
-  "date": "2025-08-01",
-  "ageLimit": "18+",
-  "length": "TBD",
-  "category": [
-    "Action"
-  ],
-  "type": "Movie",
-  "description": "Barney Ross leads the ultimate team for one last explosive mission.",
-  "rating": 7.5,
-  "active": true
-},
+  "description": "A lone mercenary with a haunted past is forced back into the underworld to protect a group of strangers, uncovering a conspiracy that reaches far beyond his own history.",
+  "active": true,
+  "rating": 7.8,
+  "collection": "Originals"
+}
+,
 {
   "_id": 45,
   "titleImg": "https://upload.wikimedia.org/path/to/fast11-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BYTQ3.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwV_QhTsVF0b711g6BFCRFDx9K6rhqsH0_Rboq5DRPW-MVGM8Xl-uWszTdhO2atKWGQ-g&usqp=CAU",
   "reviewImg": "https://m.media-amazon.com/images/M/MV5BNmM1.jpg",
   "video": "videos/fast11-trailer.mp4",
   "title": "Fast & Furious 11",
@@ -963,71 +944,10 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 46,
-  "titleImg": "https://upload.wikimedia.org/path/to/johnwick5-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BM2Y3.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BMjJm.jpg",
-  "video": "videos/johnwick5-trailer.mp4",
-  "title": "John Wick: Chapter 5",
-  "year": 2025,
-  "date": "2025-09-12",
-  "ageLimit": "18+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Crime",
-    "Thriller"
-  ],
-  "type": "Movie",
-  "description": "John Wick returns for one last bloody chapter of vengeance and redemption.",
-  "rating": 9,
-  "active": true
-},
-{
-  "_id": 47,
-  "titleImg": "https://upload.wikimedia.org/path/to/mission8-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZmRk.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZDQ3.jpg",
-  "video": "videos/mission8-trailer.mp4",
-  "title": "Mission: Impossible – Reckoning Part Two",
-  "year": 2025,
-  "date": "2025-06-27",
-  "ageLimit": "13+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Thriller"
-  ],
-  "type": "Movie",
-  "description": "Ethan Hunt faces the conclusion of his most dangerous mission yet.",
-  "rating": 8.6,
-  "active": true
-},
-{
-  "_id": 48,
-  "titleImg": "https://upload.wikimedia.org/path/to/sm5-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BNzdh.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BYzlj.jpg",
-  "video": "videos/sm5-trailer.mp4",
-  "title": "Spider-Man 5 (MCU)",
-  "year": 2025,
-  "date": "2025-12-17",
-  "ageLimit": "13+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Superhero"
-  ],
-  "type": "Movie",
-  "description": "Peter Parker faces a new threat that tests his identity and future as Spider-Man.",
-  "rating": 9.1,
-  "active": true
-},
-{
   "_id": 49,
-  "titleImg": "https://upload.wikimedia.org/path/to/sonic3-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZjNl.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZmUw.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/sonic3-trailer.mp4",
   "title": "Sonic the Hedgehog 3",
   "year": 2025,
@@ -1046,9 +966,9 @@ const moviesData = [{
 },
 {
   "_id": 50,
-  "titleImg": "https://upload.wikimedia.org/path/to/wicked-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZTM3.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BYjUw.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/wicked-trailer.mp4",
   "title": "Wicked: Part One",
   "year": 2025,
@@ -1066,9 +986,9 @@ const moviesData = [{
 },
 {
   "_id": 51,
-  "titleImg": "https://upload.wikimedia.org/path/to/venom3-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BYzIx.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BMzFk.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/venom3-trailer.mp4",
   "title": "Venom: The Last Dance",
   "year": 2025,
@@ -1082,129 +1002,6 @@ const moviesData = [{
   "type": "Movie",
   "description": "Eddie Brock and Venom face their most dangerous threat yet in this final installment.",
   "rating": 7.9,
-  "active": true
-},
-{
-  "_id": 52,
-  "titleImg": "https://upload.wikimedia.org/path/to/gladiator2-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZTg2.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZGI1.jpg",
-  "video": "videos/gladiator2-trailer.mp4",
-  "title": "Gladiator 2",
-  "year": 2025,
-  "date": "2025-11-15",
-  "ageLimit": "16+",
-  "length": "TBD",
-  "category": [
-    "Action",
-    "Drama"
-  ],
-  "type": "Movie",
-  "description": "A follow-up to the iconic Gladiator, focusing on Lucius, the son of Maximus' lover.",
-  "rating": 8.7,
-  "active": true
-},
-{
-  "_id": 53,
-  "titleImg": "https://upload.wikimedia.org/path/to/mufasa-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BMmQ3.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZTRl.jpg",
-  "video": "videos/mufasa-trailer.mp4",
-  "title": "Mufasa: The Lion King",
-  "year": 2025,
-  "date": "2025-12-20",
-  "ageLimit": "7+",
-  "length": "TBD",
-  "category": [
-    "Adventure",
-    "Drama",
-    "Family"
-  ],
-  "type": "Movie",
-  "description": "The origin story of Mufasa, exploring how he became the great king of the Pride Lands.",
-  "rating": 8.1,
-  "active": true
-},
-{
-  "_id": 54,
-  "titleImg": "https://upload.wikimedia.org/path/to/insideout2-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BY2Ux.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BMGM1.jpg",
-  "video": "videos/insideout2-trailer.mp4",
-  "title": "Inside Out 2",
-  "year": 2025,
-  "date": "2025-06-14",
-  "ageLimit": "7+",
-  "length": "1h 50m",
-  "category": [
-    "Animation",
-    "Comedy",
-    "Family"
-  ],
-  "type": "Movie",
-  "description": "Riley is now a teenager dealing with new emotions, including Anxiety, Envy, and Embarrassment.",
-  "rating": 8.4,
-  "active": true
-},
-{
-  "_id": 55,
-  "titleImg": "https://upload.wikimedia.org/path/to/deadpool3-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BYzZk.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BZmM4.jpg",
-  "video": "videos/deadpool3-trailer.mp4",
-  "title": "Deadpool & Wolverine",
-  "year": 2025,
-  "date": "2025-07-26",
-  "ageLimit": "18+",
-  "length": "2h 10m",
-  "category": [
-    "Action",
-    "Comedy"
-  ],
-  "type": "Movie",
-  "description": "Deadpool teams up with Wolverine in an R-rated multiverse adventure full of humor and chaos.",
-  "rating": 9,
-  "active": true
-},
-{
-  "_id": 56,
-  "titleImg": "https://upload.wikimedia.org/path/to/joker2-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BJGFi.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BYjM5.jpg",
-  "video": "videos/joker2-trailer.mp4",
-  "title": "Joker: Folie à Deux",
-  "year": 2025,
-  "date": "2025-10-04",
-  "ageLimit": "18+",
-  "length": "2h 12m",
-  "category": [
-    "Drama",
-    "Crime",
-    "Musical"
-  ],
-  "type": "Movie",
-  "description": "Arthur Fleck returns, with Harley Quinn by his side, blurring the lines between reality and madness.",
-  "rating": 8.8,
-  "active": true
-},
-{
-  "_id": 57,
-  "titleImg": "https://upload.wikimedia.org/path/to/dune2-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZDU5NTM1NzUt.jpg",
-  "reviewImg": "https://m.media-amazon.com/images/M/MV5BM2I4.jpg",
-  "video": "videos/dune2-trailer.mp4",
-  "title": "Dune: Part Two",
-  "year": 2025,
-  "date": "2025-03-15",
-  "ageLimit": "13+",
-  "length": "2h 46m",
-  "category": [
-    "Sci-Fi",
-    "Adventure"
-  ],
-  "type": "Movie",
-  "description": "Paul Atreides unites with the Fremen to wage war against the conspirators who destroyed his family.",
-  "rating": 9.2,
   "active": true
 },
 {
@@ -1268,26 +1065,7 @@ const moviesData = [{
   "active": true,
   "latest": true
 },
-{
-  "_id": 61,
-  "titleImg": "images/thug-life-title.png",
-  "bgImg": "https://via.placeholder.com/800x450.png?text=Thug+Life+2025",
-  "reviewImg": "https://via.placeholder.com/960x540.png?text=Review+Thug+Life",
-  "video": "videos/thug-life-trailer.mp4",
-  "title": "Thug Life",
-  "year": 2025,
-  "date": "2025-06-05",
-  "ageLimit": "18+",
-  "length": "163 min",
-  "category": [
-    "Action",
-    "Drama"
-  ],
-  "type": "Movie",
-  "description": "Indian Tamil gangster action/drama by Mani Ratnam, combining themes of betrayal, power, and redemption. :contentReference[oaicite:6]{index=6}",
-  "active": true,
-  "latest": true
-},
+
 {
   "_id": 62,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-The-Final-Reckoning-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
@@ -2020,26 +1798,7 @@ const moviesData = [{
   "description": "A young hobbit, Frodo, begins a dangerous journey to destroy a powerful ring that could bring darkness to Middle-earth, facing friends and foes along the way on a quest full of courage and discovery.",
   "active": true
 },
-{
-  "_id": 100,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://images.moviesanywhere.com/72628135a01e28dbd3de510a70f39ad1/51843284-b466-458a-968d-21a5038f39be.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-  "video": "videos/cruella-trailer.mp4",
-  "title": "Cruella",
-  "year": 2021,
-  "date": "2021-05-28",
-  "ageLimit": "13+",
-  "length": "2h 14m",
-  "category": [
-    "Crime",
-    "Comedy",
-    "Drama"
-  ],
-  "type": "Movie",
-  "description": "Young Estella navigates 1970s London, aspiring to become a fashion designer. As she grows, her rebellious and cunning nature emerges, leading her to embrace her alter ego, Cruella, in a world of high fashion, rivalry, and personal ambition.",
-  "active": true
-},
+
 {
   "_id": 101,
   "titleImg": "https://image.tmdb.org/t/p/w500/7tRr9O5T4HkY7sYkd5eTl1SZZQA.jpg",
@@ -2120,9 +1879,9 @@ const moviesData = [{
 },
 {
   "_id": 105,
-  "titleImg": "images/avatar-title.png",
-  "bgImg": "avatarbg",
-  "reviewImg": "https://snworksceo.imgix.net/dpn-34s/0a7855f2-7d69-4cdf-8b14-b5c59bd1bf03.sized-1000x1000.jpg?w=1000",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "video": "videos/avatar-trailer.mp4",
   "title": "Avatar",
   "year": 2009,
@@ -2160,9 +1919,9 @@ const moviesData = [{
 },
 {
   "_id": 107,
-  "titleImg": "../images/inception-title.png",
-  "bgImg": "inceptionbg",
-  "reviewImg": "../images/inception-review.jpeg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "video": "videos/inception-trailer.mp4",
   "title": "Inception",
   "year": 2010,
@@ -2180,9 +1939,9 @@ const moviesData = [{
 },
 {
   "_id": 108,
-  "titleImg": "../images/dark-knight-title.png",
-  "bgImg": "darkknightbg",
-  "reviewImg": "https://theconsultingdetectivesblog.com/wp-content/uploads/2014/06/the-dark-knight-original.jpg",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2017/12/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "video": "videos/dark-knight-trailer.mp4",
   "title": "The Dark Knight",
   "year": 2008,
@@ -2217,6 +1976,60 @@ const moviesData = [{
   "type": "Movie",
   "description": "In a future where Earth faces ecological collapse, a team of explorers travels through a wormhole to find a new habitable planet. They confront unknown worlds, emotional challenges, and the limits of human survival as they try to save humanity.",
   "active": true
-}];
+},{
+    _id: 151,
+    titleImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
+    bgImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+    video: "videos/arrow.mp4",
+    title: "Arrow",
+    year: 2012,
+    date: "2012-10-10",
+    ageLimit: "13+",
+    length: "42m per episode",
+    category: ["Action", "Adventure", "Crime"],
+    type: "Series",
+    description: "Oliver Queen returns home after five years stranded on a hostile island and becomes the vigilante known as Arrow.",
+    active: true,
+    rating: 7.5,
+    episodes: 170
+  },
+  {
+    _id: 152,
+    titleImg:"https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png" ,
+    bgImg: "https://media.cimanow.cc/wp-content/uploads/2018/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+    reviewImg:"https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg" ,
+    video: "videos/the-flash.mp4",
+    title: "The Flash",
+    year: 2014,
+    date: "2014-10-07",
+    ageLimit: "13+",
+    length: "43m per episode",
+    category: ["Action", "Adventure", "Sci-Fi"],
+    type: "Series",
+    description: "Barry Allen, a young crime scene investigator, gains super-speed and becomes the superhero known as the Flash.",
+    active: true,
+    rating: 7.7,
+    episodes: 150
+  },
+  
+  {
+    _id: 154,
+    titleImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+    bgImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+    video: "videos/bridgerton.mp4",
+    title: "Bridgerton",
+    year: 2020,
+    date: "2020-12-25",
+    ageLimit: "16+",
+    length: "55m per episode",
+    category: ["Drama", "Romance", "Historical"],
+    type: "Series",
+    description: "Set in Regency-era London, the powerful Bridgerton family navigates society, love, and scandal.",
+    active: true,
+    rating: 7.3,
+    episodes: 16
+  }];
 
 export default moviesData;

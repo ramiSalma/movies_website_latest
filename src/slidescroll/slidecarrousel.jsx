@@ -82,7 +82,7 @@ const ModernSlideCarousel = ({ slides }) => {
               }}
             >
               {/* Background Overlay */}
-              <div className="absolute inset-0 bg-black/40 rounded-inherit" />
+              {/* <div className="absolute inset-0 bg-black/40 rounded-inherit" /> */}
               
               {/* Content - Only visible on second item */}
               <div className="content absolute top-1/2 left-24 transform -translate-y-1/2 w-96 text-left text-white hidden">
