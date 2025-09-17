@@ -7,11 +7,12 @@ import MoviesCollection from './section2/MovieCollections'
 import MoviesGenre from './section2/MovieGenre'
 import Glowline from '../GLOWLINE/Glowline'
 import Cards from '../ElectricBorder/Cards'
-
+import SlideCarrousel from '../slidescroll/slidecarrousel';
+import moviesData from '../api/movies';
 const Page1 = () => {
   return (
     <div>
-      <Banner />
+      <SlideCarrousel slides={moviesData} />
      
        <MoviesGrid />
       <Glowline />

@@ -6,6 +6,7 @@ import Footer from './footer/Footer';
 import Navbar from './navbar/navbar';
 import Page1 from './PAGE 1/Page1';
 import Page2 from './PAGE 2/PAge2';
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +20,7 @@ function App() {
           <Route path='page2/:id' element={<Page2 />} />
           
         </Route>
-
+        
         
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>

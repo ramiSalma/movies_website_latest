@@ -1,0 +1,170 @@
+import React, { useEffect, useRef, useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import './slidecarrousel.css';
+
+const ModernSlideCarousel = ({ slides }) => {
+  const listRef = useRef(null);
+  const carouselRef = useRef(null);
+  const runningTimeRef = useRef(null);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  
+  const timeRunning = 3000;
+  const timeAutoNext = 7000;
+  let runNextAuto = useRef(null);
+
+  const resetTimeAnimation = () => {
+    const runningTimeEl = runningTimeRef.current;
+    if (runningTimeEl) {
+      runningTimeEl.style.animation = "none";
+      runningTimeEl.offsetHeight; // trigger reflow
+      runningTimeEl.style.animation = "runningTime 7s linear 1 forwards";
+    }
+  };
+
+  const showSlider = (type) => {
+    if (isTransitioning) return;
+    
+    setIsTransitioning(true);
+    const listEl = listRef.current;
+    const carouselEl = carouselRef.current;
+    const items = listEl.querySelectorAll(".carousel-item");
+
+    if (type === "next") {
+      listEl.appendChild(items[0]);
+      carouselEl.classList.add("carousel-next");
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    } else {
+      listEl.prepend(items[items.length - 1]);
+      carouselEl.classList.add("carousel-prev");
+      setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    }
+
+    setTimeout(() => {
+      carouselEl.classList.remove("carousel-next", "carousel-prev");
+      setIsTransitioning(false);
+    }, timeRunning);
+
+    clearTimeout(runNextAuto.current);
+    runNextAuto.current = setTimeout(() => showSlider("next"), timeAutoNext);
+
+    resetTimeAnimation();
+  };
+
+  useEffect(() => {
+    resetTimeAnimation();
+    runNextAuto.current = setTimeout(() => showSlider("next"), timeAutoNext);
+
+    return () => clearTimeout(runNextAuto.current);
+  }, []);
+
+  return (
+    <div className="relative w-screen h-screen overflow-hidden bg-black" style={{ zIndex: 1 }}>
+      {/* Main Carousel Container */}
+      <div className="carousel-container relative w-full h-full" ref={carouselRef}>
+        <div className="carousel-list relative w-full h-full" ref={listRef}>
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className="carousel-item absolute bg-cover bg-center bg-no-repeat rounded-none transition-all duration-1000 ease-in-out"
+              style={{
+                backgroundImage: `url(${slide.bgImg})`,
+                '--bg-image': `url(${slide.reviewImg || slide.bgImg})`,
+                // Default positioning for carousel items
+                width: '180px',
+                height: '250px',
+                top: '80%',
+                left: '70%',
+                transform: 'translateY(-70%)',
+                borderRadius: '20px',
+                boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)',
+                zIndex: 10,
+              }}
+            >
+              {/* Background Overlay */}
+              <div className="absolute inset-0 bg-black/40 rounded-inherit" />
+              
+              {/* Content - Only visible on second item */}
+              <div className="content absolute top-1/2 left-24 transform -translate-y-1/2 w-96 text-left text-white hidden">
+                {/* Movie Title Image */}
+                <div className="title mb-4 opacity-0 animate-slide-in-1">
+                  {slide.titleImg ? (
+                    <img 
+                      src={slide.titleImg} 
+                      alt={slide.name}
+                      className="max-w-full h-auto filter drop-shadow-2xl"
+                    />
+                  ) : (
+                    <h1 className="text-6xl md:text-8xl font-bold text-red-600 uppercase leading-none tracking-wider">
+                      {slide.name}
+                    </h1>
+                  )}
+                </div>
+
+                {/* Movie Name/Subtitle */}
+                {slide.subtitle && (
+                  <div className="name text-4xl md:text-6xl font-bold uppercase leading-none text-white opacity-0 animate-slide-in-2"
+                       style={{ textShadow: '3px 4px 4px rgba(255, 255, 255, 0.8)' }}>
+                    {slide.subtitle}
+                  </div>
+                )}
+
+                {/* Description */}
+                <div className="des mt-4 mb-6 text-lg text-gray-200 leading-relaxed ml-1 opacity-0 animate-slide-in-3 max-w-lg">
+                  {slide.description}
+                </div>
+
+                {/* Action Buttons */}
+                <div className="btn ml-1 opacity-0 animate-slide-in-4 flex gap-4">
+                  <button
+                    onClick={slide.onSeeMore || (() => {})}
+                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-600/30"
+                  >
+                    {slide.seeMoreText || "WATCH NOW"}
+                  </button>
+                  <button
+                    onClick={slide.onSubscribe || (() => {})}
+                    className="px-6 py-3 bg-transparent text-red-600 font-semibold border-2 border-white rounded-lg hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 transform hover:scale-105"
+                  >
+                    {slide.subscribeText || "MY LIST"}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation Arrows */}
+        <div className="arrows absolute top-80 bottom-0 left-180 right-0 flex justify-between items-center px-8" style={{ zIndex: 40 }}>
+          <button
+            onClick={() => showSlider("prev")}
+            disabled={isTransitioning}
+            className="w-10 h-10 rounded-full  text-white border-2  text-xl font-bold transition-all duration-500 hover:bg-white hover:text-black hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg"
+          >
+            <ChevronLeftIcon className="w-6 h-6" />
+          </button>
+          <button
+            onClick={() => showSlider("next")}
+            disabled={isTransitioning}
+            className="w-10 h-10 rounded-full  text-white border-2  text-xl font-bold transition-all duration-500 hover:bg-white hover:text-black hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg"
+          >
+            <ChevronRightIcon className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Progress Bar */}
+        <div className="absolute top-0 left-0 w-full h-1 bg-black/30" style={{ zIndex: 30 }}>
+          <div
+            ref={runningTimeRef}
+            className="h-full bg-red-600 w-0"
+            style={{
+              animation: "runningTime 7s linear 1 forwards"
+            }}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ModernSlideCarousel;
