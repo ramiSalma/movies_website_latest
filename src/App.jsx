@@ -6,6 +6,7 @@ import Footer from './footer/Footer';
 import Navbar from './navbar/navbar';
 import Page1 from './PAGE 1/Page1';
 import Page2 from './PAGE 2/PAge2';
+import CollectionPage from './PAGE 3/CollectionPage';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
           
           <Route index element={<Page1 />} />
           <Route path='page2/:id' element={<Page2 />} />
-          
+          <Route path="/collections/:collectionId" element={<CollectionPage />} />
         </Route>
         
         

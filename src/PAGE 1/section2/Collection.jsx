@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from "react";
-import { ArrowLongRightIcon, ChevronLeftIcon, ChevronRightIcon, StarIcon } from "@heroicons/react/24/outline";
+import { ArrowLongRightIcon, ChevronLeftIcon, ChevronRightIcon, StarIcon, EyeIcon } from "@heroicons/react/24/outline";
 import { StarIcon as StarSolidIcon } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
 import ShinyText from "../../SHINY-TEXT/ShinyText";
 
-const Collection = ({ title, items }) => {
+const Collection = ({ title, items = [], collectionId }) => {
   const carouselRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -45,31 +46,58 @@ const Collection = ({ title, items }) => {
     checkScrollState();
   }, [items]);
 
+  // Early return if no items
+  if (!items || items.length === 0) {
+    return (
+      <div className="w-full min-h-80 text-left flex gap-10 px-10 py-8 bg-black rounded-2xl shadow-xl">
+        <div className="flex w-1/4 flex-col justify-between pb-4">
+          <div>
+            <h2
+              style={fontStyle}
+              className="text-5xl font-bold text-red-600 mb-4 relative inline-block"
+            >
+              {title || "Collection"}
+              <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-red-700 via-red-500 to-red-700 blur-sm"></span>
+              <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-red-600"></span>
+            </h2>
+            
+            <div className="text-gray-400 text-sm mb-6">
+              <p className="flex items-center gap-2">
+                <span className="w-2 h-2 bg-gray-500 rounded-full"></span>
+                No items available
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div className="w-3/4 flex items-center justify-center">
+          <div className="text-center text-gray-500">
+            <div className="text-6xl mb-4">📽️</div>
+            <p className="text-lg">No items to display</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="w-full min-h-80 text-left flex gap-10 px-10 py-8 bg-black rounded-2xl shadow-xl ">
+    <div className="w-full min-h-80 text-left flex gap-10 px-10 py-8 bg-black rounded-2xl shadow-xl">
       {/* Title + Info */}
-      <div className="flex w-1/4 flex-col justify-between pb-4">
+      <div className="flex w-1/4 flex-col justify-between pl-6 pb-4">
         <div>
           <h2
             style={fontStyle}
-            className="text-5xl font-bold text-red-600 mb-4 relative inline-block"
+            className="text-4xl font-bold text-red-600 mb-4 relative inline-block"
           >
             {title}
-            <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-red-700 via-red-500 to-red-700 blur-sm"></span>
-            <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-red-600"></span>
+            {/* <span className="absolute -bottom-1 left-0 w-full h-[3px] bg-gradient-to-r from-red-700 via-red-500 to-red-700 blur-sm"></span> */}
+            {/* <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-red-600"></span> */}
           </h2>
           
-          {/* Collection Stats */}
-          <div className="text-gray-400 text-sm mb-6">
-            <p className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
-              Collection items
-            </p>
-          </div>
-        </div>
+         </div>
 
         {/* Navigation Instructions */}
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 pb-12">
           <div className="flex items-center gap-2 text-gray-300 text-lg font-medium">
             <ShinyText
               text="DRAG TO BROWSE"
@@ -80,14 +108,14 @@ const Collection = ({ title, items }) => {
             <ArrowLongRightIcon className="h-6 w-6 text-red-600 hover:scale-110 transition-all duration-300 hover:text-red-500" />
           </div>
           
-         
+          
         </div>
       </div>
 
       {/* Enhanced Carousel */}
       <div className="relative w-3/4 group">
         
-        {/* Navigation Buttons with Same Effects as TrendingMovies */}
+        {/* Navigation Buttons */}
         <button
           onClick={() => scrollCarousel('left')}
           disabled={!canScrollLeft}
@@ -130,16 +158,17 @@ const Collection = ({ title, items }) => {
           }}
         >
           {items.map((item, index) => (
-            <div
+            <Link
               key={index}
-              className="relative min-w-[160px] h-48 bg-black/90 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3"
+              to={`/page2/${item._id}`}
+              className="relative min-w-[160px] h-48 bg-black/90 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
               onMouseEnter={() => setHoveredItem(index)}
               onMouseLeave={() => setHoveredItem(null)}
             >
               {/* Image */}
               <img
-                src={item.image}
-                alt={item.name}
+                src={item.bgImg || item.image}
+                alt={item.title || item.name}
                 className="h-full w-full object-cover transition-all duration-700 ease-out group-hover/item:scale-110 group-hover/item:brightness-110"
                 loading="lazy"
               />
@@ -152,7 +181,7 @@ const Collection = ({ title, items }) => {
                 {/* Content with Staggered Animation */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 group-hover/item:translate-y-0 transition-transform duration-500 ease-out">
                   <h3 className="text-lg font-bold mb-2 line-clamp-2 text-white group-hover/item:text-red-400 transition-colors duration-300">
-                    {item.name}
+                    {item.title || item.name}
                   </h3>
                   
                   {item.year && (
@@ -189,9 +218,9 @@ const Collection = ({ title, items }) => {
                     </div>
                   )}
                   
-                  {item.genre && Array.isArray(item.genre) && (
+                  {(item.genre || item.category) && (
                     <div className="flex flex-wrap gap-1 mt-2">
-                      {item.genre.slice(0, 2).map((g, i) => (
+                      {(item.category || item.genre)?.slice(0, 2).map((g, i) => (
                         <span key={i} className="px-2 py-0.5 bg-red-600/80 text-xs rounded-full">
                           {g}
                         </span>
@@ -200,17 +229,9 @@ const Collection = ({ title, items }) => {
                   )}
                 </div>
               </div>
-
-             
-              
-              
-
-             
-            </div>
+            </Link>
           ))}
         </div>
-
-        
       </div>
     </div>
   );
