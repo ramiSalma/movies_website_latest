@@ -6,7 +6,7 @@ const MovieContent = ({ slide }) => {
       <div className="content absolute top-1/2 left-24 transform -translate-y-1/2 w-96 text-left text-white hidden">
         <div className="lg:col-span-3 text-white z-10 space-y-4">
           {/* Genres */}
-          <div className="flex flex-wrap gap-3 animate-slide-in-1 opacity-0">
+          {/* <div className="flex flex-wrap gap-3 animate-slide-in-1 opacity-0">
             {slide.category.map((genre, index) => (
               <span
                 key={index}
@@ -15,7 +15,7 @@ const MovieContent = ({ slide }) => {
                 {genre}
               </span>
             ))}
-          </div>
+          </div> */}
 
           {/* Title Logo (if available) */}
           {slide.titleImg && (
