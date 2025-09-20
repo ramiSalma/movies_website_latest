@@ -167,68 +167,12 @@ const Collection = ({ title, items = []}) => {
             >
               {/* Image */}
               <img
-                src={item.bgImg || item.image}
-                alt={item.title || item.name}
+                src={ item.image}
+                alt={ item.name}
                 className="h-full w-full object-cover transition-all duration-700 ease-out group-hover/item:scale-110 group-hover/item:brightness-110"
                 loading="lazy"
               />
               
-              {/* Enhanced Overlay with Smooth Animation */}
-              <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent transition-all duration-500 ease-in-out ${
-                hoveredItem === index ? 'opacity-100' : 'opacity-0'
-              }`}>
-                
-                {/* Content with Staggered Animation */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 group-hover/item:translate-y-0 transition-transform duration-500 ease-out">
-                  <h3 className="text-lg font-bold mb-2 line-clamp-2 text-white group-hover/item:text-red-400 transition-colors duration-300">
-                    {item.title || item.name}
-                  </h3>
-                  
-                  {item.year && (
-                    <p className="text-gray-300 text-sm mb-2">
-                      {item.year}
-                    </p>
-                  )}
-                  
-                  {item.description && (
-                    <p className={`text-gray-300 text-xs transition-all duration-500 ease-in-out line-clamp-3 ${
-                      hoveredItem === index ? 'opacity-100 max-h-20 translate-y-0' : 'opacity-0 max-h-0 translate-y-2'
-                    }`}>
-                      {item.description}
-                    </p>
-                  )}
-                  
-                  {item.rating && (
-                    <div className={`flex items-center mt-2 transition-all duration-600 ease-in-out ${
-                      hoveredItem === index ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-                    }`}>
-                      <div className="flex">
-                        {[...Array(5)].map((_, i) => (
-                          <StarSolidIcon
-                            key={i}
-                            className={`w-3 h-3 ${
-                              i < Math.floor(item.rating) ? 'text-yellow-400' : 'text-gray-600'
-                            }`}
-                          />
-                        ))}
-                      </div>
-                      <span className="text-gray-300 text-xs ml-1">
-                        {item.rating}
-                      </span>
-                    </div>
-                  )}
-                  
-                  {(item.genre || item.category) && (
-                    <div className="flex flex-wrap gap-1 mt-2">
-                      {(item.category || item.genre)?.slice(0, 2).map((g, i) => (
-                        <span key={i} className="px-2 py-0.5 bg-red-600/80 text-xs rounded-full">
-                          {g}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
             </Link>
           ))}
         </div>

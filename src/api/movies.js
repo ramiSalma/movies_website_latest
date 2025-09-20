@@ -94,13 +94,13 @@ const moviesData = [{
   "category": [
     "Action",
     "Comedy",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
-  "description": "Deadpool teams up with Wolverine in an action-packed and hilarious adventure across the Marvel universe.",
+  "description": "Deadpool teams up with Wolverine in an action-packed and hilarious adventure across the Marvel Cinematic Universe universe.",
   "active": true,
   "rating": 7.8,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 
 {
@@ -316,13 +316,13 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
   "description": "A group of anti-heroes is assembled for a covert mission to save the world, testing their loyalty and morality.",
   "active": true,
   "rating": 7.2,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 14,
@@ -338,22 +338,22 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
   "description": "Steve Rogers faces a new global threat and must train the next generation of heroes.",
   "active": true,
   "rating": 7.5,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 
 {
   "_id": 16,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-  "video": "videos/the-marvels.mp4",
-  "title": "The Marvels",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/the-Marvel Cinematic Universes.mp4",
+  "title": "The Marvel Cinematic Universes",
   "year": 2023,
   "date": "2023-11-10",
   "ageLimit": "13+",
@@ -361,13 +361,13 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
   "description": "Carol Danvers, Kamala Khan, and Monica Rambeau join forces to face a mysterious cosmic threat.",
   "active": true,
   "rating": 7.1,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 17,
@@ -383,13 +383,13 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
   "description": "The Guardians embark on a mission to protect one of their own while facing old enemies and cosmic threats.",
   "active": true,
   "rating": 8,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 18,
@@ -405,13 +405,13 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "Marvel"
+    "Marvel Cinematic Universe"
   ],
   "type": "Movie",
   "description": "Scott Lang and Hope van Dyne, along with their families, explore the Quantum Realm, facing Kang the Conqueror.",
   "active": true,
   "rating": 6.6,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 2,
@@ -455,7 +455,7 @@ const moviesData = [{
   "description": "The leaders of Wakanda fight to protect their nation after the death of King T’Challa, facing new threats and alliances.",
   "active": true,
   "rating": 7.3,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 20,
@@ -477,7 +477,7 @@ const moviesData = [{
   "description": "Thor teams up with Valkyrie, Korg, and Jane Foster to stop Gorr the God Butcher from destroying the gods.",
   "active": true,
   "rating": 6.8,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 21,
@@ -499,7 +499,7 @@ const moviesData = [{
   "description": "Doctor Strange teams up with allies to face a multiverse threat, exploring alternate realities and strange powers.",
   "active": true,
   "rating": 7,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 22,
@@ -521,7 +521,7 @@ const moviesData = [{
   "description": "Peter Parker seeks Doctor Strange's help to restore his secret identity, but multiverse chaos ensues.",
   "active": true,
   "rating": 8.3,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 23,
@@ -543,7 +543,7 @@ const moviesData = [{
   "description": "A race of immortal beings emerges from hiding to protect humanity from their evil counterparts, the Deviants.",
   "active": true,
   "rating": 6.3,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 24,
@@ -565,7 +565,7 @@ const moviesData = [{
   "description": "Shang-Chi must confront the past he thought he left behind when his father’s secret organization resurfaces.",
   "active": true,
   "rating": 7.4,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 25,
@@ -587,7 +587,7 @@ const moviesData = [{
   "description": "Natasha Romanoff confronts her past and faces the darker side of her history as a spy and assassin.",
   "active": true,
   "rating": 6.7,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 26,
@@ -609,7 +609,7 @@ const moviesData = [{
   "description": "Peter Parker goes on a school trip to Europe where he faces new threats that will shape his future as Spider-Man.",
   "active": true,
   "rating": 7.5,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 27,
@@ -631,15 +631,15 @@ const moviesData = [{
   "description": "After the devastating events of Infinity War, the remaining Avengers assemble once more to reverse Thanos' actions.",
   "active": true,
   "rating": 8.4,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 28,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/03/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
-  "video": "videos/captain-marvel.mp4",
-  "title": "Captain Marvel",
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/03/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "video": "videos/captain-Marvel Cinematic Universe.mp4",
+  "title": "Captain Marvel Cinematic Universe",
   "year": 2019,
   "date": "2019-03-08",
   "ageLimit": "13+",
@@ -653,7 +653,7 @@ const moviesData = [{
   "description": "Carol Danvers becomes one of the universe's most powerful heroes as Earth is caught in the middle of a galactic war.",
   "active": true,
   "rating": 6.9,
-  "collection": "Marvel"
+  "collection": "Marvel Cinematic Universe"
 },
 {
   "_id": 29,
@@ -1482,7 +1482,7 @@ const moviesData = [{
   "_id": 83,
   "titleImg": "https://image.tmdb.org/t/p/w500/yw5l9QAK8J9Tz4K2tKfN6G8h8DZ.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_FMjpg_UX1000_.jpg",
-  "reviewImg": "hhttps://cdn.marvel.com/content/2x/antman_lob_mas_hlf_01_0.jpg",
+  "reviewImg": "hhttps://cdn.Marvel Cinematic Universe.com/content/2x/antman_lob_mas_hlf_01_0.jpg",
   "video": "https://www.youtube.com/watch?v=1G4isv_Fylg",
   "title": "Ant-Man",
   "year": 2015,
@@ -1554,7 +1554,7 @@ const moviesData = [{
   "_id": 87,
   "titleImg": "https://image.tmdb.org/t/p/w500/5SSQErMlHDSrYhjSfkK2rxv9G3M.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
-  "reviewImg": "https://3238leblogdemarvelll-1278.kxcdn.com/wp-content/uploads/2011/07/Captain-America-First-Avenger-banniere.webp",
+  "reviewImg": "https://3238leblogdeMarvel Cinematic Universell-1278.kxcdn.com/wp-content/uploads/2011/07/Captain-America-First-Avenger-banniere.webp",
   "video": "https://www.youtube.com/watch?v=JerVrbLldXw",
   "title": "Captain America: The First Avenger",
   "year": 2011,

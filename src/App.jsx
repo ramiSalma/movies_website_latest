@@ -13,7 +13,7 @@ import SignUpPage from './AUTHENTIFICATION/signUp';
 function App() {
   return (
     <div className="App">
-      {/* <SplashCursor /> */}
+      
       <BrowserRouter>
       <Routes>
         
@@ -32,13 +32,6 @@ function App() {
     </BrowserRouter>
 
 
-     {/* <Navbar /> */}
-     {/* <Banner />
-     <MoviesGrid />
-     <TrendingMovies title="TOP TRENDING" trendKey="trend" />
-     <TrendingMovies title="LATEST RELEASE" trendKey="latest" />
-     <Collection title="Popular Movie Collections" items={movieCollections} />
-     <Collection title="Movie Genres" items={MovieGenres}  /> */}
      
      
     </div>
