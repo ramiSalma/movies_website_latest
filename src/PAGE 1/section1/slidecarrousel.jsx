@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import './slidecarrousel.css';
+import MovieContent from "./MovieContent";
 
 const ModernSlideCarousel = ({ slides }) => {
   const listRef = useRef(null);
@@ -8,7 +9,7 @@ const ModernSlideCarousel = ({ slides }) => {
   const runningTimeRef = useRef(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+
   const timeRunning = 3000;
   const timeAutoNext = 7000;
   let runNextAuto = useRef(null);
@@ -24,7 +25,7 @@ const ModernSlideCarousel = ({ slides }) => {
 
   const showSlider = (type) => {
     if (isTransitioning) return;
-    
+
     setIsTransitioning(true);
     const listEl = listRef.current;
     const carouselEl = carouselRef.current;
@@ -83,53 +84,9 @@ const ModernSlideCarousel = ({ slides }) => {
             >
               {/* Background Overlay */}
               {/* <div className="absolute inset-0 bg-black/40 rounded-inherit" /> */}
-              
+
               {/* Content - Only visible on second item */}
-              <div className="content absolute top-1/2 left-24 transform -translate-y-1/2 w-96 text-left text-white hidden">
-                {/* Movie Title Image */}
-                <div className="title mb-4 opacity-0 animate-slide-in-1">
-                  {slide.titleImg ? (
-                    <img 
-                      src={slide.titleImg} 
-                      alt={slide.name}
-                      className="max-w-full h-auto filter drop-shadow-2xl"
-                    />
-                  ) : (
-                    <h1 className="text-6xl md:text-8xl font-bold text-red-600 uppercase leading-none tracking-wider">
-                      {slide.name}
-                    </h1>
-                  )}
-                </div>
-
-                {/* Movie Name/Subtitle */}
-                {slide.subtitle && (
-                  <div className="name text-4xl md:text-6xl font-bold uppercase leading-none text-white opacity-0 animate-slide-in-2"
-                       style={{ textShadow: '3px 4px 4px rgba(255, 255, 255, 0.8)' }}>
-                    {slide.subtitle}
-                  </div>
-                )}
-
-                {/* Description */}
-                <div className="des mt-4 mb-6 text-lg text-gray-200 leading-relaxed ml-1 opacity-0 animate-slide-in-3 max-w-lg">
-                  {slide.description}
-                </div>
-
-                {/* Action Buttons */}
-                <div className="btn ml-1 opacity-0 animate-slide-in-4 flex gap-4">
-                  <button
-                    onClick={slide.onSeeMore || (() => {})}
-                    className="px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-red-600/30"
-                  >
-                    {slide.seeMoreText || "WATCH NOW"}
-                  </button>
-                  <button
-                    onClick={slide.onSubscribe || (() => {})}
-                    className="px-6 py-3 bg-transparent text-red-600 font-semibold border-2 border-white rounded-lg hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 transform hover:scale-105"
-                  >
-                    {slide.subscribeText || "MY LIST"}
-                  </button>
-                </div>
-              </div>
+              <MovieContent slide={slide} />
             </div>
           ))}
         </div>

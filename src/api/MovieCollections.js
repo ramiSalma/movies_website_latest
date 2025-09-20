@@ -12,17 +12,17 @@
   {
     id : 3 ,
     name: "Harry Potter Series",
-    image: "https://images.moviesanywhere.com/a6c15bc23180d69d6175f5095de03001/9558e510-c2d8-46a7-bf16-c2b7b143359b.webp?h=250&resize=fit&w=250"
+    image: "https://www.tvinsider.com/wp-content/uploads/2025/03/harry-potter-max-770x433.jpg"
   },
   {
     id : 4 ,
     name: "The Lord of the Rings",
-    image: "https://i.pinimg.com/736x/a0/69/7e/a0697ea796e6c732fec016286df1d05d.jpg"
+    image: "https://res.cloudinary.com/zenbusiness/q_auto,w_1050/v1670445040/logaster/logaster-2020-06-image4-2.jpg"
   },
   {
     id : 5 ,
     name: "Star Wars Saga",
-    image: "https://images.moviesanywhere.com/03e036152da1354edfb5e01476470534/795252df-0c05-4ebc-97cf-99cdbbbe91c1.webp?h=250&resize=fit&w=250"
+    image: "https://www.fredzone.org/wp-content/uploads/2010/01/2starwars1024.jpg "
   },
   {
     id : 6 ,
@@ -37,7 +37,7 @@
   {
     id : 8 ,
     name: "Fast & Furious",
-    image: "https://images.moviesanywhere.com/ff91deed2e0897f401d4f2c599325bf9/6fe525d7-e632-4088-a0ef-ed473ed492fd.webp?h=250&resize=fit&w=250"
+    image: "https://i.ytimg.com/vi/tXxpjo1hLY4/maxresdefault.jpg"
   }
 ];
 

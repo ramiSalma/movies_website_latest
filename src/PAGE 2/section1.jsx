@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-import MoviesContent from '../PAGE 1/section1/MoviesContent';
+
 import moviesData from '../api/movies';
 import ServersSection from './Servers'
 import RelatedMoviesSection from './RelatedMoviesSection'
+import HeroSection from './HeroSection';
+
 const Section1 = () => {
   const { id } = useParams();
   const featuredMovie = moviesData.find(movie => movie._id === parseInt(id));
@@ -56,77 +58,7 @@ const Section1 = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section */}
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* Background Image - Centered and Cover */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${featuredMovie.reviewImg})`,
-          }}
-        ></div>
-
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 to-red-600/25"></div>
-
-        {/* Content Container */}
-        <div className="relative h-full flex items-center">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center gap-8 lg:gap-12">
-
-              {/* Left Side - Movie Info */}
-              <div className="flex-1 text-white z-10">
-                <MoviesContent featuredMovie={featuredMovie} />
-              </div>
-
-              {/* Right Side - Movie Poster (moved inside hero section) */}
-              <div className="hidden lg:block flex-shrink-0 z-10">
-                <div className="flex items-start gap-6">
-                  <img
-                    src={featuredMovie.bgImg}
-                    alt={featuredMovie.title}
-                    className="w-80 h-auto rounded-2xl shadow-2xl border-4 border-red-600/30 transition-all duration-500 hover:border-red-600 hover:shadow-red-600/20"
-                  />
-
-                  {/* Movie Info Card */}
-                  <div className="bg-black/70 backdrop-blur-sm rounded-xl p-6 border border-red-600/20 max-w-xs">
-                    <h3 className="text-white font-bold text-lg mb-4 line-clamp-2">
-                      {featuredMovie.title}
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div className="flex justify-between">
-                        <span className="text-gray-400">Year:</span>
-                        <span className="text-white">{featuredMovie.year}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-400">Duration:</span>
-                        <span className="text-white">{featuredMovie.length}</span>
-                      </div>
-                      <div className="flex justify-between">
-                        <span className="text-gray-400">Genre:</span>
-                        <span className="text-red-600 font-medium">
-                          {Array.isArray(featuredMovie.category)
-                            ? featuredMovie.category.slice(0, 2).join(", ")
-                            : featuredMovie.category}
-                        </span>
-                      </div>
-                      {featuredMovie.rating && (
-                        <div className="flex justify-between">
-                          <span className="text-gray-400">Rating:</span>
-                          <span className="text-yellow-500 font-medium">
-                            ⭐ {featuredMovie.rating}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+     <HeroSection featuredMovie={featuredMovie} />
 
 
 

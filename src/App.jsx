@@ -21,7 +21,7 @@ function App() {
           
           <Route index element={<Page1 />} />
           <Route path='page2/:id' element={<Page2 />} />
-          <Route path='/page3/:id' element={<CollectionPage />} />
+          <Route path='page3/:id' element={<CollectionPage />} />
           <Route path="/signin" element={<AuthPage />} />
           <Route path="/signup" element={<SignUpPage />} />
         </Route>

@@ -1,4 +1,5 @@
-const moviesData = [{
+const moviesData = [
+  {
   "_id": 1,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
@@ -21,25 +22,50 @@ const moviesData = [{
   "episodes": 73
 },
 {
-    _id: 153,
-    titleImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-Casa-de-Papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-    bgImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/La-casa-de-papel-Season-1.jpg",
-    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-casa-de-papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-    video: "videos/la-casa-de-papel.mp4",
-    title: "La Casa de Papel",
-    year: 2017,
-    date: "2017-05-02",
-    ageLimit: "16+",
-    length: "50m per episode",
-    category: ["Crime", "Thriller", "Drama"],
-    type: "Series",
-    description: "A criminal mastermind, The Professor, plans the biggest heist in history, recruiting eight people with unique skills.",
-    active: true,
-    rating: 8.3,
-    episodes: 41
-  },
-  {
-  "_id": 100,
+  "_id": 150,
+  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "title": "Red Notice",
+  "year": 2021,
+  "date": "2021-11-12",
+  "ageLimit": "13+",
+  "length": "1h 58m",
+  "category": [
+    "Action",
+    "Comedy",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "An Interpol agent tracks the world's most wanted art thief, leading to a globe-trotting adventure full of deception, heists, and unlikely alliances.",
+  "active": true,
+  "rating": 6.3,
+  "collection": "Red Notice"
+},
+{
+  "_id": 2,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-Casa-de-Papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2018/02/La-casa-de-papel-Season-1.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2018/02/%D9%85%D8%B3%D9%84%D8%B3%D9%84-La-casa-de-papel-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "video": "videos/la-casa-de-papel.mp4",
+  "title": "La Casa de Papel",
+  "year": 2017,
+  "date": "2017-05-02",
+  "ageLimit": "16+",
+  "length": "50m per episode",
+  "category": [
+    "Crime",
+    "Thriller",
+    "Drama"
+  ],
+  "type": "Series",
+  "description": "A criminal mastermind, The Professor, plans the biggest heist in history, recruiting eight people with unique skills.",
+  "active": true,
+  "rating": 8.3,
+  "episodes": 41
+},
+{
+  "_id": 3,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://images.moviesanywhere.com/72628135a01e28dbd3de510a70f39ad1/51843284-b466-458a-968d-21a5038f39be.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-Cruella-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -59,7 +85,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 10,
+  "_id": 4,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/08/%D9%81%D9%8A%D9%84%D9%85-Suicide-Squad-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -72,16 +98,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "A secret government agency recruits imprisoned supervillains for dangerous missions in exchange for commuted sentences.",
   "active": true,
   "rating": 6,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 15,
+  "_id": 5,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/09/%D9%81%D9%8A%D9%84%D9%85-Deadpool-Wolverine-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -102,9 +128,8 @@ const moviesData = [{
   "rating": 7.8,
   "collection": "Marvel Cinematic Universe"
 },
-
 {
-  "_id": 3,
+  "_id": 6,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/11/%D9%81%D9%8A%D9%84%D9%85-Black-Adam-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/11/%D9%81%D9%8A%D9%84%D9%85-Black-Adam-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/11/%D9%81%D9%8A%D9%84%D9%85-Black-Adam-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -117,16 +142,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "The powerful anti-hero Black Adam emerges from Kahndaq to unleash his vengeance on the modern world.",
   "active": true,
   "rating": 6.6,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 4,
+  "_id": 7,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/03/%D9%81%D9%8A%D9%84%D9%85-The-Batman-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/03/%D9%81%D9%8A%D9%84%D9%85-The-Batman-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/03/%D9%81%D9%8A%D9%84%D9%85-The-Batman-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -139,16 +164,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Crime",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Batman uncovers corruption in Gotham City while facing the serial killer Riddler.",
   "active": true,
   "rating": 7.9,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 5,
+  "_id": 8,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Wonder-Woman-1984-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Wonder-Woman-1984-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Wonder-Woman-1984-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -161,16 +186,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Diana Prince comes face-to-face with the Soviet agent Max Lord and her former lover Steve Trevor in the 1980s.",
   "active": true,
   "rating": 5.4,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 6,
+  "_id": 9,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Birds-of-Prey-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/03/%D9%81%D9%8A%D9%84%D9%85-Birds-of-Prey-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Birds-of-Prey-2020-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -183,16 +208,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Harley Quinn teams up with other female heroes to protect a young girl from crime lord Roman Sionis in Gotham City.",
   "active": true,
   "rating": 6,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 7,
+  "_id": 10,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/06/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/05/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/06/%D9%81%D9%8A%D9%84%D9%85-Shazam-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -205,16 +230,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Comedy",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "A teenage boy can transform into an adult superhero by saying the word 'Shazam', and he must stop Dr. Thaddeus Sivana.",
   "active": true,
   "rating": 7.1,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 8,
+  "_id": 11,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/01/%D9%81%D9%8A%D9%84%D9%85-Aquaman-and-the-Lost-Kingdom-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2018/12/%D9%81%D9%8A%D9%84%D9%85-Aquaman-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2018/12/%D9%81%D9%8A%D9%84%D9%85-Aquaman-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
@@ -227,16 +252,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Arthur Curry learns he is heir to the underwater kingdom of Atlantis and must prevent a war between land and sea.",
   "active": true,
   "rating": 7,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 9,
+  "_id": 12,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/09/%D9%81%D9%8A%D9%84%D9%85-Justice-League-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2017/11/Justice-League.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/09/%D9%81%D9%8A%D9%84%D9%85-Justice-League-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -249,17 +274,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Batman and Wonder Woman assemble a team of metahumans to face an extraterrestrial threat to Earth.",
   "active": true,
   "rating": 6.1,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
-
 {
-  "_id": 11,
+  "_id": 13,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Batman-v-Superman-Dawn-of-Justice-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Batman-v-Superman-Dawn-of-Justice-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Batman-v-Superman-Dawn-of-Justice-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -272,16 +296,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Batman and Superman clash as ideological differences and manipulation by Lex Luthor lead to chaos in Gotham and Metropolis.",
   "active": true,
   "rating": 6.5,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 12,
+  "_id": 14,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/09/%D9%81%D9%8A%D9%84%D9%85-Man-of-Steel-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/09/%D9%81%D9%8A%D9%84%D9%85-Man-of-Steel-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/09/%D9%81%D9%8A%D9%84%D9%85-Man-of-Steel-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -294,16 +318,16 @@ const moviesData = [{
   "category": [
     "Action",
     "Adventure",
-    "DC"
+    "DC Extended Universe"
   ],
   "type": "Movie",
   "description": "Clark Kent discovers his superhuman abilities and must embrace his destiny as Superman to save Earth from General Zod.",
   "active": true,
   "rating": 7,
-  "collection": "DC"
+  "collection": "DC Extended Universe"
 },
 {
-  "_id": 13,
+  "_id": 15,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Thunderbolts-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Thunderbolts-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Thunderbolts-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -325,7 +349,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 14,
+  "_id": 16,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/03/%D9%81%D9%8A%D9%84%D9%85-Captain-America-Brave-New-World-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/03/%D9%81%D9%8A%D9%84%D9%85-Captain-America-Brave-New-World-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/03/%D9%81%D9%8A%D9%84%D9%85-Captain-America-Brave-New-World-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -346,12 +370,11 @@ const moviesData = [{
   "rating": 7.5,
   "collection": "Marvel Cinematic Universe"
 },
-
 {
-  "_id": 16,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvel Cinematic Universes-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "_id": 17,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/12/%D9%81%D9%8A%D9%84%D9%85-The-Marvels-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "videos/the-Marvel Cinematic Universes.mp4",
   "title": "The Marvel Cinematic Universes",
   "year": 2023,
@@ -370,7 +393,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 17,
+  "_id": 18,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/07/%D9%81%D9%8A%D9%84%D9%85-Guardians-of-the-Galaxy-Vol.-3-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/07/%D9%81%D9%8A%D9%84%D9%85-Guardians-of-the-Galaxy-Vol.-3-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/07/%D9%81%D9%8A%D9%84%D9%85-Guardians-of-the-Galaxy-Vol.-3-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -392,7 +415,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 18,
+  "_id": 19,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/04/%D9%81%D9%8A%D9%84%D9%85-Ant-Man-and-the-Wasp-Quantumania-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/04/%D9%81%D9%8A%D9%84%D9%85-Ant-Man-and-the-Wasp-Quantumania-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/04/%D9%81%D9%8A%D9%84%D9%85-Ant-Man-and-the-Wasp-Quantumania-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -414,10 +437,10 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 2,
+  "_id": 20,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Lucifer-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "reviewImg": "https://images.tntdrama.com/tnt/$dyna_params/https%3A%2F%2Fi.cdn.tntdrama.com%2Fassets%2Fimages%2F2022%2F04%2FLucifer-2048x1536.jpg",
   "video": "videos/lucifer.mp4",
   "title": "Lucifer",
   "year": 2016,
@@ -436,7 +459,7 @@ const moviesData = [{
   "episodes": 93
 },
 {
-  "_id": 19,
+  "_id": 21,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/01/%D9%81%D9%8A%D9%84%D9%85-Black-Panther-Wakanda-Forever-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/01/%D9%81%D9%8A%D9%84%D9%85-Black-Panther-Wakanda-Forever-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/01/%D9%81%D9%8A%D9%84%D9%85-Black-Panther-Wakanda-Forever-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -458,7 +481,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 20,
+  "_id": 22,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/08/%D9%81%D9%8A%D9%84%D9%85-Thor-Love-and-Thunder-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/08/%D9%81%D9%8A%D9%84%D9%85-Thor-Love-and-Thunder-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/08/%D9%81%D9%8A%D9%84%D9%85-Thor-Love-and-Thunder-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -480,7 +503,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 21,
+  "_id": 23,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/06/%D9%81%D9%8A%D9%84%D9%85-Doctor-Strange-in-the-Multiverse-of-Madness-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/06/%D9%81%D9%8A%D9%84%D9%85-Doctor-Strange-in-the-Multiverse-of-Madness-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/06/%D9%81%D9%8A%D9%84%D9%85-Doctor-Strange-in-the-Multiverse-of-Madness-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -502,7 +525,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 22,
+  "_id": 24,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-No-Way-Home-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-No-Way-Home-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-No-Way-Home-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -524,7 +547,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 23,
+  "_id": 25,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/01/%D9%81%D9%8A%D9%84%D9%85-Eternals-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/01/%D9%81%D9%8A%D9%84%D9%85-Eternals-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/01/%D9%81%D9%8A%D9%84%D9%85-Eternals-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -546,7 +569,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 24,
+  "_id": 26,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/09/%D9%81%D9%8A%D9%84%D9%85-Shang-Chi-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/09/%D9%81%D9%8A%D9%84%D9%85-Shang-Chi-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/09/%D9%81%D9%8A%D9%84%D9%85-Shang-Chi-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -568,7 +591,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 25,
+  "_id": 27,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-Black-Widow-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-Black-Widow-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-Black-Widow-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -590,7 +613,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 26,
+  "_id": 28,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-Far-from-Home-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/07/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-Far-from-Home-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Spider-Man-Far-from-Home-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -612,7 +635,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 27,
+  "_id": 29,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Avengers-Endgame-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/04/%D9%81%D9%8A%D9%84%D9%85-Avengers-Endgame-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Avengers-Endgame-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -634,10 +657,10 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 28,
-  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/03/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel Cinematic Universe-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "_id": 30,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/03/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Captain-Marvel-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "video": "videos/captain-Marvel Cinematic Universe.mp4",
   "title": "Captain Marvel Cinematic Universe",
   "year": 2019,
@@ -656,7 +679,7 @@ const moviesData = [{
   "collection": "Marvel Cinematic Universe"
 },
 {
-  "_id": 29,
+  "_id": 31,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-Fantastic-Beasts-The-Secrets-of-Dumbledore-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-Fantastic-Beasts-The-Secrets-of-Dumbledore-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-Fantastic-Beasts-The-Secrets-of-Dumbledore-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -676,7 +699,7 @@ const moviesData = [{
   "rating": 6.2
 },
 {
-  "_id": 30,
+  "_id": 32,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Deathly-Hallows-Part-2-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Deathly-Hallows-Part-2-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Deathly-Hallows-Part-2-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -693,10 +716,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "The epic finale as Harry faces Voldemort in the ultimate battle for the wizarding world.",
   "active": true,
-  "rating": 8.1
+  "rating": 8.1,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 31,
+  "_id": 33,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Deathly-Hallows-Part-1-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Sorcerers-Stone-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Deathly-Hallows-Part-1-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -713,10 +737,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry, Ron, and Hermione go on a dangerous mission to destroy Voldemort’s Horcruxes.",
   "active": true,
-  "rating": 7.7
+  "rating": 7.7,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 32,
+  "_id": 34,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Half-Blood-Prince-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Half-Blood-Prince-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Half-Blood-Prince-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -734,10 +759,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry and Dumbledore work together to uncover Voldemort's past and find the secret to defeating him.",
   "active": true,
-  "rating": 7.6
+  "rating": 7.6,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 33,
+  "_id": 35,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Order-of-the-Phoenix-2007-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Order-of-the-Phoenix-2007-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Order-of-the-Phoenix-2007-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -754,10 +780,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry fights to convince the wizarding world that Voldemort has returned while forming Dumbledore's Army.",
   "active": true,
-  "rating": 7.5
+  "rating": 7.5,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 34,
+  "_id": 36,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Goblet-of-Fire-2005-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -774,10 +801,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry is mysteriously entered into the dangerous Triwizard Tournament, facing deadly challenges.",
   "active": true,
-  "rating": 7.7
+  "rating": 7.7,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 35,
+  "_id": 37,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Prisoner-of-Azkaban-2004-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Prisoner-of-Azkaban-2004-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Prisoner-of-Azkaban-2004-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -795,10 +823,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry learns that Sirius Black, a dangerous prisoner, has escaped from Azkaban and may be after him.",
   "active": true,
-  "rating": 7.9
+  "rating": 7.9,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 36,
+  "_id": 38,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Chamber-of-Secrets-2002-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Chamber-of-Secrets-2002-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Chamber-of-Secrets-2002-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -816,10 +845,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry returns to Hogwarts for his second year, where a dark force terrorizes the students.",
   "active": true,
-  "rating": 7.4
+  "rating": 7.4,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 37,
+  "_id": 39,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Sorcerers-Stone-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Sorcerers-Stone-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Harry-Potter-and-the-Sorcerers-Stone-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -837,10 +867,11 @@ const moviesData = [{
   "type": "Movie",
   "description": "Harry Potter discovers he is a wizard and attends Hogwarts School of Witchcraft and Wizardry for the first time.",
   "active": true,
-  "rating": 7.6
+  "rating": 7.6,
+  "collection": "Harry Potter Series"
 },
 {
-  "_id": 38,
+  "_id": 40,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-%E2%80%93-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-Rogue-Nation-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -860,7 +891,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 39,
+  "_id": 41,
   "titleImg": "https://upload.wikimedia.org/path/to/atomic-blonde2-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BZTU3.jpg",
   "reviewImg": "https://m.media-amazon.com/images/M/MV5BYzMz.jpg",
@@ -880,7 +911,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 40,
+  "_id": 42,
   "titleImg": "https://upload.wikimedia.org/path/to/shadow-force-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNzli.jpg",
   "reviewImg": "https://m.media-amazon.com/images/M/MV5BMzBi.jpg",
@@ -909,16 +940,19 @@ const moviesData = [{
   "date": "2024-09-15",
   "ageLimit": "16+",
   "length": "2h 7m",
-  "category": ["Action", "Thriller", "Mystery"],
+  "category": [
+    "Action",
+    "Thriller",
+    "Mystery"
+  ],
   "type": "Movie",
   "description": "A lone mercenary with a haunted past is forced back into the underworld to protect a group of strangers, uncovering a conspiracy that reaches far beyond his own history.",
   "active": true,
   "rating": 7.8,
   "collection": "Originals"
-}
-,
+},
 {
-  "_id": 45,
+  "_id": 44,
   "titleImg": "https://upload.wikimedia.org/path/to/fast11-title.png",
   "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwV_QhTsVF0b711g6BFCRFDx9K6rhqsH0_Rboq5DRPW-MVGM8Xl-uWszTdhO2atKWGQ-g&usqp=CAU",
   "reviewImg": "https://m.media-amazon.com/images/M/MV5BNmM1.jpg",
@@ -938,7 +972,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 49,
+  "_id": 45,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/01/%D9%81%D9%8A%D9%84%D9%85-Sonic-the-Hedgehog-3-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -959,7 +993,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 50,
+  "_id": 46,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/10/%D9%81%D9%8A%D9%84%D9%85-Joker-Folie-a-Deux-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -979,7 +1013,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 51,
+  "_id": 47,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2024/11/%D9%81%D9%8A%D9%84%D9%85-Venom-The-Last-Dance-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -999,7 +1033,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 58,
+  "_id": 48,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/09/%D9%81%D9%8A%D9%84%D9%85-Weapons-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/09/%D9%81%D9%8A%D9%84%D9%85-Weapons-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/09/%D9%81%D9%8A%D9%84%D9%85-Weapons-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -1019,7 +1053,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 59,
+  "_id": 49,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-The-Bad-Guys-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-The-Bad-Guys-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2022/05/%D9%81%D9%8A%D9%84%D9%85-The-Bad-Guys-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -1040,7 +1074,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 60,
+  "_id": 50,
   "titleImg": "images/freakier-friday-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BY2Q0M2NmMjctODEwMi00NGIyLTk4NjUtMzBlNDAxYTZlZGJiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXwcsQVTkVYdrE90AlsUzwUz8FeQ2fKtvfk5s-5GXYetTRvNa-oUObMh9DRzSNm3OLGiA&usqp=CAU",
@@ -1059,9 +1093,8 @@ const moviesData = [{
   "active": true,
   "latest": true
 },
-
 {
-  "_id": 62,
+  "_id": 51,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-The-Final-Reckoning-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-The-Final-Reckoning-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-Mission-Impossible-The-Final-Reckoning-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
@@ -1082,7 +1115,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 63,
+  "_id": 52,
   "titleImg": "images/conjuring-last-rites-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://wallpapers.com/images/hd/the-conjuring-poster-y2bs1yiiscn9qdio.jpg",
@@ -1102,7 +1135,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 64,
+  "_id": 53,
   "titleImg": "images/tron-ares-title.png",
   "bgImg": "https://cdna.artstation.com/p/assets/images/images/086/748/458/large/visualbarrage-tron-ares-2025-movie-poster.jpg?1743986323",
   "reviewImg": "https://miro.medium.com/v2/resize:fit:1400/0*v8EWiokRl2GaExsa",
@@ -1122,9 +1155,9 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 65,
+  "_id": 54,
   "titleImg": "images/how-to-train-your-dragon-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BMjIwMDIwNjAyOF5BMl5BanBnXkFtZTgwNDE1MDc2NTM@._V1_FMjpg_UX1000_.jpg",
+  "bgImg": "https://m.media-amazon.com/images/M/MV5BMjIwMDIwNjAyOF5BMl5BanBnXkFtZTgwNDE1MDC Extended Universe2NTM@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://static0.moviewebimages.com/wordpress/wp-content/uploads/article/evkgjS87YJyxAttm7AW0s2V6c6Wqj5.jpg",
   "video": "videos/httyd-trailer.mp4",
   "title": "How to Train Your Dragon",
@@ -1143,7 +1176,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 66,
+  "_id": 55,
   "titleImg": "images/sinners-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://via.placeholder.com/960x540.png?text=Review+Sinners",
@@ -1162,9 +1195,9 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 67,
+  "_id": 56,
   "titleImg": "images/the-naked-gun-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BNGFlNDhkNzItZjgxNC00OGYzLWFjZDAtZTJmNDY5ZmEyZDc0XkEyXkFqcGc@._V1_.jpg",
+  "bgImg": "https://m.media-amazon.com/images/M/MV5BNGFlNDhkNzItZjgxNC00OGYzLWFjZDAtZTJmNDY5ZmEyZDC Extended Universe0XkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://www.phoenixmag.com/wp-content/uploads/2025/08/Screen-Shot-2025-08-04-at-11.42.09-AM.png",
   "video": "videos/the-naked-gun-trailer.mp4",
   "title": "The Naked Gun",
@@ -1183,7 +1216,7 @@ const moviesData = [{
   "latest": true
 },
 {
-  "_id": 68,
+  "_id": 57,
   "titleImg": "../images/dexter-title.png",
   "bgImg": "https://i.ebayimg.com/images/g/EQsAAOSwgv5ZTlGk/s-l1200.jpg",
   "reviewImg": "https://ntvb.tmsimg.com/assets/p185267_b_h10_aa.jpg?w=960&h=540",
@@ -1204,10 +1237,10 @@ const moviesData = [{
   "trend": true
 },
 {
-  "_id": 69,
-  "titleImg": "https://image.tmdb.org/t/p/w500/7ZO9yoEU2fAHKhmJWfAc2QIPWJg.jpg",
-  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ005ecBMcdT2VzU_m4O26-CbVYsC8E5AmURw&s",
-  "reviewImg": "https://assets-prd.ignimgs.com/2023/09/26/blogroll-creator-review-1695740984192.jpg",
+  "_id": 58,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2023/11/%D9%81%D9%8A%D9%84%D9%85-The-Creator-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2023/11/%D9%81%D9%8A%D9%84%D9%85-The-Creator-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2023/11/%D9%81%D9%8A%D9%84%D9%85-The-Creator-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "https://www.youtube.com/watch?v=aOb15GVFZxU",
   "title": "The Creator",
   "year": 2023,
@@ -1224,9 +1257,9 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 70,
+  "_id": 59,
   "titleImg": "../images/dark-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZTE1YTczZWUtNTI5Ny00NzI0LWFmODctYzZiYzQ3MmRmOWZlXkEyXkFqcGc@._V1_.jpg",
+  "bgImg": "https://m.media-amazon.com/images/M/MV5BZTE1YTczZWUtNTI5Ny00NzI0LWFmODC Extended UniversetYzZiYzQ3MmRmOWZlXkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "hhttps://i0.wp.com/333horror.com/wp-content/uploads/2021/02/season-1-wallpaper.jpg",
   "video": "videos/dark-trailer.mp4",
   "title": "Dark",
@@ -1245,7 +1278,7 @@ const moviesData = [{
   "trend": true
 },
 {
-  "_id": 71,
+  "_id": 60,
   "titleImg": "../images/strangerthings-title.png",
   "bgImg": "https://posterwa.com/cdn/shop/products/STR4.jpg?v=1659647172",
   "reviewImg": "https://www.tallengestore.com/cdn/shop/products/stranger_things_1_756ad630-b491-41d3-89c8-170c6299d358.jpg?v=1514020602",
@@ -1266,7 +1299,7 @@ const moviesData = [{
   "trend": true
 },
 {
-  "_id": 72,
+  "_id": 61,
   "titleImg": "https://image.tmdb.org/t/p/w500/zQH8dZx1SgjM7RHh2P6uXe3G4kL.jpg",
   "bgImg": "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Oppenheimer_%28film%29.jpg/250px-Oppenheimer_%28film%29.jpg",
   "reviewImg": "https://static0.cbrimages.com/wordpress/wp-content/uploads/2023/07/oppenheimer_movie_nolan.jpg",
@@ -1286,7 +1319,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 73,
+  "_id": 62,
   "titleImg": "https://image.tmdb.org/t/p/w500/7JyxqfMEXg3A2kZZgwyU0vbzUKk.jpg",
   "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXlsN2uwcWeTVb4yo09ce1V9S8AnosT2qHpA&s",
   "reviewImg": "https://bloody-disgusting.com/wp-content/uploads/2022/11/last-of-us-tv-2.png",
@@ -1306,7 +1339,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 74,
+  "_id": 63,
   "titleImg": "https://image.tmdb.org/t/p/w500/3t0vK5kR1EnNbF1u1jHozVnYg7W.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://poundarts.org.uk/wp-content/uploads/2024/05/Dune-Part-Two.jpg",
@@ -1326,10 +1359,10 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 75,
-  "titleImg": "https://image.tmdb.org/t/p/w500/wNBQ1Yqz6W0ZAKw5nlFJGzGbL8D.jpg",
+  "_id": 64,
+  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Peaky-Blinders-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
   "bgImg": "https://www.tallengestore.com/cdn/shop/products/PeakyBlinders-NetflixTVShow-ArtPoster_56823192-0a33-4a9d-b8e3-fd2878fcc867_large.jpg?v=1619864550",
-  "reviewImg": "https://cdn.webshopapp.com/shops/268192/files/433182623/the-peaky-blinders.jpg",
+  "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2024/06/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Peaky-Blinders-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B1%D8%A7%D8%A8%D8%B9-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "video": "https://www.youtube.com/watch?v=RRKJiM9Njr8",
   "title": "Peaky Blinders",
   "year": 2013,
@@ -1346,7 +1379,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 76,
+  "_id": 65,
   "titleImg": "../images/squidgame-title.png",
   "bgImg": "https://m.media-amazon.com/images/I/7118ecsxO3L._UF894,1000_QL80_.jpg",
   "reviewImg": "https://sm.ign.com/t/ign_in/feature/s/squid-game/squid-game-season-3-ending-explained-the-game-isnt-over-yet_td74.1280.jpg",
@@ -1366,7 +1399,7 @@ const moviesData = [{
   "trend": true
 },
 {
-  "_id": 77,
+  "_id": 66,
   "titleImg": "../images/wednesday-title.png",
   "bgImg": "https://i.ebayimg.com/images/g/PucAAOSw7kpjzvMi/s-l1200.jpg",
   "reviewImg": "https://images.hdqwalls.com/wallpapers/netflix-wednesday-season-2-bj.jpg",
@@ -1387,7 +1420,7 @@ const moviesData = [{
   "trend": true
 },
 {
-  "_id": 78,
+  "_id": 67,
   "titleImg": "https://image.tmdb.org/t/p/w500/hUtrCo9PH0loJqUKgz5TX4tSB3d.jpg",
   "bgImg": "https://m.media-amazon.com/images/I/91RNSMNJlsL._AC_SL1500_.jpg",
   "reviewImg": "https://indiqueipraver.com/wp-content/uploads/2022/02/781842.jpg",
@@ -1407,8 +1440,8 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 79,
-  "titleImg": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+  "_id": 68,
+  "titleImg": "https://image.tmdb.org/t/p/w500/udDC Extended UniverselJoHjfjb8Ekgsd4FDteOkCU.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
   "video": "https://www.youtube.com/watch?v=0WVDKZJkGlY",
@@ -1425,7 +1458,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 80,
+  "_id": 69,
   "titleImg": "https://image.tmdb.org/t/p/w500/6thLeu9TLf9HscOnwI9c48eLPYN.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_.jpg",
   "reviewImg": "https://i0.wp.com/straightfromamovie.com/wp-content/uploads/2017/07/spiderman-homecoming-2017.jpg?fit=1000%2C625&ssl=1",
@@ -1443,7 +1476,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 81,
+  "_id": 70,
   "titleImg": "https://image.tmdb.org/t/p/w500/8tZYtuWezp8JbcsvHYO0O46tFbo.jpg",
   "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB06zANAWkdMC2XZazOOJKxtCR7JvgTml-wQ&s",
   "reviewImg": "https://img1.hotstarext.com/image/upload/f_auto/sources/r1/cms/prod/1288/1371288-i-1e17c5bd66e5",
@@ -1461,7 +1494,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 82,
+  "_id": 71,
   "titleImg": "https://image.tmdb.org/t/p/w500/6kbAMLteGO8yyewYau6bJ683sw7.jpg",
   "bgImg": "https://upload.wikimedia.org/wikipedia/en/3/33/Guardians_of_the_Galaxy_%28film%29_poster.jpg",
   "reviewImg": "https://wallpapers.com/images/hd/guardians-of-the-galaxy-2014-03j6q0os49l2rs02.jpg",
@@ -1479,7 +1512,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 83,
+  "_id": 72,
   "titleImg": "https://image.tmdb.org/t/p/w500/yw5l9QAK8J9Tz4K2tKfN6G8h8DZ.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "hhttps://cdn.Marvel Cinematic Universe.com/content/2x/antman_lob_mas_hlf_01_0.jpg",
@@ -1497,7 +1530,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 84,
+  "_id": 73,
   "titleImg": "https://image.tmdb.org/t/p/w500/8i6weHfT8L5rB9J7b8yKX7Kc3Lm.jpg",
   "bgImg": "https://play-lh.googleusercontent.com/Sxh2qo5repn6KAslfYzEr_pdlUNFUo1KRzxQWGALEFZ0PNxVl5mPSASE_noFSUFF3nbD",
   "reviewImg": "https://www.alternateending.com/wp-content/uploads/2019/12/sDNhWjd4X7c0oOlClkkwvqVOo45-1.jpg",
@@ -1515,7 +1548,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 85,
+  "_id": 74,
   "titleImg": "https://image.tmdb.org/t/p/w500/lMgry7YxyG5Q2zZpFB2MkgOjLxB.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://media.gq-magazine.co.uk/photos/5d138e9fb6fee94e70c9e01a/16:9/w_2560%2Cc_limit/https_2f2fblogs-imagesforbes.jpg",
@@ -1533,7 +1566,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 86,
+  "_id": 75,
   "titleImg": "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTg1MTY2MjYzNV5BMl5BanBnXkFtZTgwMTc4NTMwNDI@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://www.framerated.co.uk/frwpcontent/uploads/2018/02/blackpanther01.jpg",
@@ -1551,7 +1584,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 87,
+  "_id": 76,
   "titleImg": "https://image.tmdb.org/t/p/w500/5SSQErMlHDSrYhjSfkK2rxv9G3M.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNzUyM2YyY2MtNzNlMS00MWU5LTgxNjAtNzZlNmI2NjU2NDZlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://3238leblogdeMarvel Cinematic Universell-1278.kxcdn.com/wp-content/uploads/2011/07/Captain-America-First-Avenger-banniere.webp",
@@ -1569,7 +1602,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 88,
+  "_id": 77,
   "titleImg": "https://image.tmdb.org/t/p/w500/l2rK1t1lFkbck3dG7xLkgmZ1q9p.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNjRhNGZjZjEtYTQzYS00OWUxLThjNGEtMTIwMTE2ZDFlZTZkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/10195/images/LvmmDZxkTDqp0DX7mUo621ahdX.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
@@ -1587,9 +1620,9 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 89,
+  "_id": 78,
   "titleImg": "https://image.tmdb.org/t/p/w500/1xU1dUCSmG2MCbTjXGnQOaA3u2Y.jpg",
-  "bgImg": "https://m.media-amazon.com/images/I/61dC4+N3+0L._UF894,1000_QL80_.jpg",
+  "bgImg": "https://m.media-amazon.com/images/I/61DC Extended Universe4+N3+0L._UF894,1000_QL80_.jpg",
   "reviewImg": "https://wallpapercave.com/wp/wp10220939.jpg",
   "video": "https://www.youtube.com/watch?v=Ke1Y3P9D0Bc",
   "title": "Iron Man 2",
@@ -1605,7 +1638,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 90,
+  "_id": 79,
   "titleImg": "https://image.tmdb.org/t/p/w500/gh4CMhx7k8vhm1DGv4hG5VScT5X.jpg",
   "bgImg": "https://images.moviesanywhere.com/84076c825d1776e3d3e938118afa8f20/5e65557d-f358-4770-a26f-c56c9f1ebff4.jpg",
   "reviewImg": "https://the-cinema-critic.com/wp-content/uploads/2019/04/150848971.jpg",
@@ -1623,8 +1656,8 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 91,
-  "titleImg": "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+  "_id": 80,
+  "titleImg": "https://image.tmdb.org/t/p/w500/udDC Extended UniverselJoHjfjb8Ekgsd4FDteOkCU.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://image.tmdb.org/t/p/original/cyecB7godJ6kNHGONFjUyVN9OX5.jpg",
   "video": "https://www.youtube.com/watch?v=0WVDKZJkGlY",
@@ -1641,7 +1674,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 92,
+  "_id": 81,
   "titleImg": "https://upload.wikimedia.org/wikipedia/en/1/11/Annabelle_%28film%29_poster.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNjkyMDU5ZWQtZDhkOC00ZWFjLWIyM2MtZWFhMDUzNjdlNzU2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://musicart.xboxlive.com/7/22815100-0000-0000-0000-000000000002/504/image.jpg",
@@ -1660,7 +1693,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 93,
+  "_id": 82,
   "titleImg": "images/johnwick-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_.jpg",
   "reviewImg": "https://m.media-amazon.com/images/M/MV5BMDE0ZjMzOTAtMzU2OS00ZDVmLWFlMjYtMThlOWYwMDBiN2E3XkEyXkFqcGdeQWFsZWxvZw@@._V1_QL75_UX500_CR0,0,500,281_.jpg",
@@ -1679,7 +1712,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 94,
+  "_id": 83,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-The-Avengers-2012-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg",
   "reviewImg": "https://variety.com/wp-content/uploads/2014/04/01-avengers-2012.jpg",
@@ -1698,7 +1731,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 95,
+  "_id": 84,
   "titleImg": "images/titanic-title.png",
   "bgImg": "https://m.media-amazon.com/images/I/811lT7khIrL._UF1000,1000_QL80_.jpg",
   "reviewImg": "https://res.cloudinary.com/wemakeit/image/upload/c_thumb,f_auto,g_center,h_630,q_auto,w_1200/v1491384316/wemakeit/production/project/728/picture-e02fb828-f97b-4202-8a11-049defe52225.jpg",
@@ -1717,7 +1750,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 96,
+  "_id": 85,
   "titleImg": "images/gladiator-title.png",
   "bgImg": "https://a.asd.homes/wp-content/uploads/2022/08/Gladiator-1-533x800.jpg",
   "reviewImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/98/images/5vZw7ltCKI0JiOYTtRxaIC3DX0e.jpg?ar=16:9&fit=crop&crop=top",
@@ -1736,7 +1769,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 97,
+  "_id": 86,
   "titleImg": "images/lotr3-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://musicart.xboxlive.com/7/79985000-0000-0000-0000-000000000002/504/image.jpg",
@@ -1752,10 +1785,11 @@ const moviesData = [{
   ],
   "type": "Movie",
   "description": "The final battle for Middle-earth unfolds as Frodo and Sam approach Mount Doom to destroy the ring, while armies clash in epic battles to determine the fate of the world.",
-  "active": true
+  "active": true,
+  "collection": "The Lord of the Rings"
 },
 {
-  "_id": 98,
+  "_id": 87,
   "titleImg": "images/lotr2-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMGQxMDdiOWUtYjc1Ni00YzM1LWE2NjMtZTg3Y2JkMjEzMTJjXkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://m.media-amazon.com/images/S/pv-target-images/8bba1c2b8884ff4d6b1876b96f80a22eeeffb32a8863ce065c02c2453094a174.jpg",
@@ -1771,10 +1805,11 @@ const moviesData = [{
   ],
   "type": "Movie",
   "description": "Frodo and Sam continue their perilous journey toward Mordor, while Aragorn, Legolas, and Gimli fight to protect Middle-earth from the growing power of Sauron and the evil forces gathering at Helm's Deep.",
-  "active": true
+  "active": true,
+  "collection": "The Lord of the Rings"
 },
 {
-  "_id": 99,
+  "_id": 88,
   "titleImg": "images/lotr-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://ntvb.tmsimg.com/assets/p28828_v_h8_ac.jpg?w=960&h=540",
@@ -1790,11 +1825,11 @@ const moviesData = [{
   ],
   "type": "Movie",
   "description": "A young hobbit, Frodo, begins a dangerous journey to destroy a powerful ring that could bring darkness to Middle-earth, facing friends and foes along the way on a quest full of courage and discovery.",
-  "active": true
+  "active": true,
+  "collection": "The Lord of the Rings"
 },
-
 {
-  "_id": 101,
+  "_id": 89,
   "titleImg": "https://image.tmdb.org/t/p/w500/7tRr9O5T4HkY7sYkd5eTl1SZZQA.jpg",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNDhlMzEyNzItMTA5Mi00YWRhLThlNTktYTQyMTA0MDIyNDEyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://thecosmiccircus.com/wp-content/uploads/2021/10/The-Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-e1648961317393.jpg",
@@ -1814,7 +1849,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 102,
+  "_id": 90,
   "titleImg": "images/matrix-title.png",
   "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXIX7z5psGiGsBQUkANUHdtvym90-_eNP3UZUyqCasrTEnbm6W1wkfuSJ-gGSG4ScvtMg&usqp=CAU",
   "reviewImg": "https://i.guim.co.uk/img/media/5e0f098d236a9ac8174c47f0f798c85f9b5686fb/0_0_2496_1497/master/2496.jpg?width=1200&quality=85&auto=format&fit=max&s=377b9ca60b2ae37b85184ebf0249a609",
@@ -1830,10 +1865,14 @@ const moviesData = [{
   ],
   "type": "Movie",
   "description": "A hacker discovers that his reality is a simulated construct controlled by machines. He joins a rebellion to free humanity, facing philosophical dilemmas and deadly battles against agents enforcing the system.",
-  "active": true
+  "active": true,
+  "collection": "The Matrix",
+  "rating": {
+    "$numberDecimal": "7.8"
+  }
 },
 {
-  "_id": 103,
+  "_id": 91,
   "titleImg": "images/godfather-title.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/238/images/6xKCYgH16UuwEGAyroLU6p8HLIn.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80",
@@ -1852,7 +1891,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 104,
+  "_id": 92,
   "titleImg": "images/joker-title.png",
   "bgImg": "https://m.media-amazon.com/images/I/51E+o6036kL._UF894,1000_QL80_.jpg",
   "reviewImg": "images/joker-review.jpg",
@@ -1872,7 +1911,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 105,
+  "_id": 93,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/11/%D9%81%D9%8A%D9%84%D9%85-Avatar-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -1892,7 +1931,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 106,
+  "_id": 94,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-Wonder-Woman-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://m.media-amazon.com/images/M/MV5BMjEzYmZkNjktODBmYi00NzNkLWIzMjItMjhkMWZiZTZlN2MwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   "reviewImg": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2017/05/wonder-woman-fourth-trailer-feat-1.jpg",
@@ -1912,7 +1951,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 107,
+  "_id": 95,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Inception-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -1932,7 +1971,7 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 108,
+  "_id": 96,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2017/12/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
   "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-The-Dark-Knight-2008-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
@@ -1952,9 +1991,9 @@ const moviesData = [{
   "active": true
 },
 {
-  "_id": 109,
+  "_id": 97,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Interstellar-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://resizing.flixster.com/47rDB5jGZrHWyRMRYMZKenbTcHU=/fit-in/705x460/v2/https://resizing.flixster.com/Y_sqtbGDcspx4oob3nD-lojSLjc=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YyMWZjZTQ2LWQwZGItNGRhMi1hZjg3LWFhZDQ1YWU1OTQ2NC53ZWJw",
+  "bgImg": "https://resizing.flixster.com/47rDB5jGZrHWyRMRYMZKenbTcHU=/fit-in/705x460/v2/https://resizing.flixster.com/Y_sqtbGDC Extended Universespx4oob3nD-lojSLjc=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2YyMWZjZTQ2LWQwZGItNGRhMi1hZjg3LWFhZDQ1YWU1OTQ2NC53ZWJw",
   "reviewImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/157336/images/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80",
   "video": "videos/interstellar-trailer.mp4",
   "title": "Interstellar",
@@ -1970,60 +2009,1175 @@ const moviesData = [{
   "type": "Movie",
   "description": "In a future where Earth faces ecological collapse, a team of explorers travels through a wormhole to find a new habitable planet. They confront unknown worlds, emotional challenges, and the limits of human survival as they try to save humanity.",
   "active": true
-},{
-    _id: 151,
-    titleImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
-    bgImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
-    video: "videos/arrow.mp4",
-    title: "Arrow",
-    year: 2012,
-    date: "2012-10-10",
-    ageLimit: "13+",
-    length: "42m per episode",
-    category: ["Action", "Adventure", "Crime"],
-    type: "Series",
-    description: "Oliver Queen returns home after five years stranded on a hostile island and becomes the vigilante known as Arrow.",
-    active: true,
-    rating: 7.5,
-    episodes: 170
-  },
-  {
-    _id: 152,
-    titleImg:"https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png" ,
-    bgImg: "https://media.cimanow.cc/wp-content/uploads/2018/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-    reviewImg:"https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg" ,
-    video: "videos/the-flash.mp4",
-    title: "The Flash",
-    year: 2014,
-    date: "2014-10-07",
-    ageLimit: "13+",
-    length: "43m per episode",
-    category: ["Action", "Adventure", "Sci-Fi"],
-    type: "Series",
-    description: "Barry Allen, a young crime scene investigator, gains super-speed and becomes the superhero known as the Flash.",
-    active: true,
-    rating: 7.7,
-    episodes: 150
-  },
-  
-  {
-    _id: 154,
-    titleImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-    bgImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-    reviewImg: "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
-    video: "videos/bridgerton.mp4",
-    title: "Bridgerton",
-    year: 2020,
-    date: "2020-12-25",
-    ageLimit: "16+",
-    length: "55m per episode",
-    category: ["Drama", "Romance", "Historical"],
-    type: "Series",
-    description: "Set in Regency-era London, the powerful Bridgerton family navigates society, love, and scandal.",
-    active: true,
-    rating: 7.3,
-    episodes: 16
-  }];
+},
+{
+  "_id": 98,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Arrow-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AB%D8%A7%D9%85%D9%86-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "video": "videos/arrow.mp4",
+  "title": "Arrow",
+  "year": 2012,
+  "date": "2012-10-10",
+  "ageLimit": "13+",
+  "length": "42m per episode",
+  "category": [
+    "Action",
+    "Adventure",
+    "Crime"
+  ],
+  "type": "Series",
+  "description": "Oliver Queen returns home after five years stranded on a hostile island and becomes the vigilante known as Arrow.",
+  "active": true,
+  "rating": 7.5,
+  "episodes": 170
+},
+{
+  "_id": 99,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2018/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%AE%D8%A7%D9%85%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2019/10/%D9%85%D8%B3%D9%84%D8%B3%D9%84-The-Flash-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%AF%D8%B3-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "video": "videos/the-flash.mp4",
+  "title": "The Flash",
+  "year": 2014,
+  "date": "2014-10-07",
+  "ageLimit": "13+",
+  "length": "43m per episode",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Series",
+  "description": "Barry Allen, a young crime scene investigator, gains super-speed and becomes the superhero known as the Flash.",
+  "active": true,
+  "rating": 7.7,
+  "episodes": 150
+},
+{
+  "_id": 100,
+  "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+  "bgImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Bridgerton-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
+  "video": "videos/bridgerton.mp4",
+  "title": "Bridgerton",
+  "year": 2020,
+  "date": "2020-12-25",
+  "ageLimit": "16+",
+  "length": "55m per episode",
+  "category": [
+    "Drama",
+    "Romance",
+    "Historical"
+  ],
+  "type": "Series",
+  "description": "Set in Regency-era London, the powerful Bridgerton family navigates society, love, and scandal.",
+  "active": true,
+  "rating": 7.3,
+  "episodes": 16
+},
+{
+  "_id": 101,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Matrix Reloaded",
+  "year": 2003,
+  "date": "2003-05-15",
+  "ageLimit": "16+",
+  "length": "2h 18m",
+  "category": [
+    "Action",
+    "Sci-Fi",
+    "Cyberpunk"
+  ],
+  "type": "Movie",
+  "description": "Neo and the rebels fight against the machines, uncovering deeper truths about the Matrix and the prophecy surrounding the One.",
+  "active": true,
+  "rating": 7.2,
+  "collection": "The Matrix Series"
+},
+{
+  "_id": 102,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Matrix Revolutions",
+  "year": 2003,
+  "date": "2003-11-05",
+  "ageLimit": "16+",
+  "length": "2h 9m",
+  "category": [
+    "Action",
+    "Sci-Fi",
+    "Cyberpunk"
+  ],
+  "type": "Movie",
+  "description": "The final battle between humans and machines unfolds as Neo faces his ultimate choice in the war for freedom.",
+  "active": true,
+  "rating": 6.8,
+  "collection": "The Matrix Series"
+},
+{
+  "_id": 103,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Matrix Resurrections",
+  "year": 2021,
+  "date": "2021-12-22",
+  "ageLimit": "16+",
+  "length": "2h 28m",
+  "category": [
+    "Action",
+    "Sci-Fi",
+    "Cyberpunk"
+  ],
+  "type": "Movie",
+  "description": "Neo returns to the Matrix as he struggles with memories of his past life and faces a new version of the simulated world.",
+  "active": true,
+  "rating": 5.7,
+  "collection": "The Matrix Series"
+},
+{
+  "_id": 104,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Maleficent",
+  "year": 2014,
+  "date": "2014-05-30",
+  "ageLimit": "10+",
+  "length": "1h 37m",
+  "category": [
+    "Fantasy",
+    "Adventure",
+    "Disney"
+  ],
+  "type": "Movie",
+  "description": "A reimagining of Disney's Sleeping Beauty, told from the perspective of Maleficent, the dark fairy who curses Princess Aurora.",
+  "active": true,
+  "rating": 6.9,
+  "collection": "Maleficent Series"
+},
+{
+  "_id": 105,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Maleficent: Mistress of Evil",
+  "year": 2019,
+  "date": "2019-10-18",
+  "ageLimit": "10+",
+  "length": "1h 59m",
+  "category": [
+    "Fantasy",
+    "Adventure",
+    "Disney"
+  ],
+  "type": "Movie",
+  "description": "Maleficent and Aurora navigate complex family ties and face new threats as a looming war threatens the magical Moors.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "Maleficent Series"
+},
+{
+  "_id": 106,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Divergent",
+  "year": 2014,
+  "date": "2014-03-21",
+  "ageLimit": "13+",
+  "length": "2h 19m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "type": "Movie",
+  "description": "In a future society divided by factions, Tris learns she is Divergent and uncovers a conspiracy to destroy all Divergents.",
+  "active": true,
+  "rating": 6.7,
+  "collection": "Divergent Series"
+},
+{
+  "_id": 107,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Insurgent",
+  "year": 2015,
+  "date": "2015-03-20",
+  "ageLimit": "13+",
+  "length": "1h 59m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "type": "Movie",
+  "description": "Tris and Four are on the run, hunted by the oppressive Erudite leaders while searching for allies to protect the factionless.",
+  "active": true,
+  "rating": 6.3,
+  "collection": "Divergent Series"
+},
+{
+  "_id": 108,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Allegiant",
+  "year": 2016,
+  "date": "2016-03-18",
+  "ageLimit": "13+",
+  "length": "1h 59m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "type": "Movie",
+  "description": "Tris and Four leave the walled city to explore the world beyond and uncover shocking truths about their society.",
+  "active": true,
+  "rating": 5.7,
+  "collection": "Divergent Series"
+},
+{
+  "_id": 109,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Hunger Games",
+  "year": 2012,
+  "date": "2012-03-23",
+  "ageLimit": "13+",
+  "length": "2h 22m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Katniss Everdeen volunteers in place of her sister for the deadly Hunger Games, a televised fight to the death in a dystopian world.",
+  "active": true,
+  "rating": 7.2,
+  "collection": "The Hunger Games Series"
+},
+{
+  "_id": 110,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Catching Fire",
+  "year": 2013,
+  "date": "2013-11-22",
+  "ageLimit": "13+",
+  "length": "2h 26m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "After winning the Hunger Games, Katniss and Peeta must compete again in the Quarter Quell, facing stronger opponents and political unrest.",
+  "active": true,
+  "rating": 7.5,
+  "collection": "The Hunger Games Series"
+},
+{
+  "_id": 111,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Mockingjay Part 1",
+  "year": 2014,
+  "date": "2014-11-21",
+  "ageLimit": "13+",
+  "length": "2h 3m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Katniss becomes the symbol of rebellion against the Capitol, leading districts in a fight for freedom.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "The Hunger Games Series"
+},
+{
+  "_id": 112,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Mockingjay Part 2",
+  "year": 2015,
+  "date": "2015-11-20",
+  "ageLimit": "13+",
+  "length": "2h 17m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The rebellion reaches the Capitol, and Katniss faces President Snow in a final confrontation to decide the fate of Panem.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "The Hunger Games Series"
+},
+{
+  "_id": 113,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Maze Runner",
+  "year": 2014,
+  "date": "2014-09-19",
+  "ageLimit": "13+",
+  "length": "1h 53m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "A teen wakes up in a mysterious maze with no memory and must work with others to escape and uncover the truth about their situation.",
+  "active": true,
+  "rating": 6.8,
+  "collection": "Maze Runner Series"
+},
+{
+  "_id": 114,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Maze Runner: Scorch Trials",
+  "year": 2015,
+  "date": "2015-09-18",
+  "ageLimit": "13+",
+  "length": "2h 12m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The Gladers journey through a post-apocalyptic wasteland while facing new enemies and challenges in the Scorch.",
+  "active": true,
+  "rating": 6.3,
+  "collection": "Maze Runner Series"
+},
+{
+  "_id": 115,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Maze Runner: The Death Cure",
+  "year": 2018,
+  "date": "2018-01-26",
+  "ageLimit": "13+",
+  "length": "2h 23m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The Gladers attempt to rescue their friends and end the WCKD threat once and for all.",
+  "active": true,
+  "rating": 6.2,
+  "collection": "Maze Runner Series"
+},
+{
+  "_id": 116,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The 5th Wave",
+  "year": 2016,
+  "date": "2016-01-22",
+  "ageLimit": "13+",
+  "length": "1h 52m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "A teenage girl struggles to survive after a series of alien attacks devastate Earth.",
+  "active": true,
+  "rating": 5.2,
+  "collection": "The 5th Wave Series"
+},
+{
+  "_id": 117,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Giver",
+  "year": 2014,
+  "date": "2014-08-15",
+  "ageLimit": "13+",
+  "length": "1h 37m",
+  "category": [
+    "Drama",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "In a seemingly perfect society without emotions or choices, a young man learns the dark secrets behind the world he lives in.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "The Giver Series"
+},
+{
+  "_id": 118,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Ender's Game",
+  "year": 2013,
+  "date": "2013-11-01",
+  "ageLimit": "13+",
+  "length": "1h 54m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Young genius Ender Wiggin is trained to lead humanity’s defense against an alien species threatening Earth.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "Ender's Game Series"
+},
+{
+  "_id": 119,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Fast and the Furious",
+  "year": 2001,
+  "date": "2001-06-22",
+  "ageLimit": "13+",
+  "length": "1h 46m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Undercover cop Brian O'Conner infiltrates the street racing world to investigate a series of hijackings and finds himself drawn to its leader, Dominic Toretto.",
+  "active": true,
+  "rating": 6.8,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 120,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "2 Fast 2 Furious",
+  "year": 2003,
+  "date": "2003-06-06",
+  "ageLimit": "13+",
+  "length": "1h 47m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Brian O'Conner teams up with former friend Roman Pearce to take down a Miami drug lord, while staying under the radar of the law.",
+  "active": true,
+  "rating": 5.9,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 121,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Fast and the Furious: Tokyo Drift",
+  "year": 2006,
+  "date": "2006-06-16",
+  "ageLimit": "13+",
+  "length": "1h 44m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Teenage street racer Sean Boswell is sent to live in Tokyo and learns the art of drifting while clashing with the local racing crew.",
+  "active": true,
+  "rating": 6,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 122,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Fast & Furious",
+  "year": 2009,
+  "date": "2009-04-03",
+  "ageLimit": "13+",
+  "length": "1h 47m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dominic Toretto and Brian O'Conner reunite in Los Angeles to take down a heroin importer while reigniting old rivalries.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 123,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Fast Five",
+  "year": 2011,
+  "date": "2011-04-29",
+  "ageLimit": "13+",
+  "length": "2h 10m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dom and Brian plan a massive heist in Rio de Janeiro, while being pursued by a relentless federal agent, Luke Hobbs.",
+  "active": true,
+  "rating": 7.3,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 124,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Fast & Furious 6",
+  "year": 2013,
+  "date": "2013-05-24",
+  "ageLimit": "13+",
+  "length": "2h 10m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dom and his crew are recruited to take down a skilled mercenary organization across Europe, in exchange for full pardons.",
+  "active": true,
+  "rating": 7,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 125,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Furious 7",
+  "year": 2015,
+  "date": "2015-04-03",
+  "ageLimit": "13+",
+  "length": "2h 17m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "The crew faces a cyberterrorist seeking revenge for his brother's death, while dealing with personal challenges and loss.",
+  "active": true,
+  "rating": 7.2,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 126,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Fate of the Furious",
+  "year": 2017,
+  "date": "2017-04-14",
+  "ageLimit": "13+",
+  "length": "2h 16m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dom is coerced into betraying his family, forcing the crew to unite and stop a cyberterrorist plot.",
+  "active": true,
+  "rating": 6.7,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 127,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "F9",
+  "year": 2021,
+  "date": "2021-06-25",
+  "ageLimit": "13+",
+  "length": "2h 23m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dom and the crew face a new threat in the form of Dom's estranged brother, Jakob, who is working with a dangerous terrorist organization.",
+  "active": true,
+  "rating": 5.2,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 128,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Fast X",
+  "year": 2023,
+  "date": "2023-05-19",
+  "ageLimit": "13+",
+  "length": "2h 23m",
+  "category": [
+    "Action",
+    "Thriller",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "Dom and the team face the most lethal threat yet: a mysterious villain with ties to Dom's past, pushing their limits in the ultimate showdown.",
+  "active": true,
+  "rating": 6.5,
+  "collection": "Fast & Furious"
+},
+{
+  "_id": 129,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode I – The Phantom Menace",
+  "year": 1999,
+  "date": "1999-05-19",
+  "ageLimit": "10+",
+  "length": "2h 16m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Two Jedi Knights, Qui-Gon Jinn and Obi-Wan Kenobi, protect Queen Amidala in hopes of securing peace, while discovering a young boy, Anakin Skywalker.",
+  "active": true,
+  "rating": 6.5,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 130,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode II – Attack of the Clones",
+  "year": 2002,
+  "date": "2002-05-16",
+  "ageLimit": "10+",
+  "length": "2h 22m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Ten years after Episode I, Anakin Skywalker becomes a Jedi apprentice while the Republic faces a separatist movement led by Count Dooku.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 131,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode III – Revenge of the Sith",
+  "year": 2005,
+  "date": "2005-05-19",
+  "ageLimit": "13+",
+  "length": "2h 20m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Anakin Skywalker falls to the dark side, becoming Darth Vader, while the Republic falls and the Empire rises.",
+  "active": true,
+  "rating": 7.5,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 132,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode IV – A New Hope",
+  "year": 1977,
+  "date": "1977-05-25",
+  "ageLimit": "10+",
+  "length": "2h 1m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, and two droids to save the galaxy from the Empire and Darth Vader.",
+  "active": true,
+  "rating": 8.6,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 133,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode V – The Empire Strikes Back",
+  "year": 1980,
+  "date": "1980-05-21",
+  "ageLimit": "10+",
+  "length": "2h 4m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The Rebel Alliance suffers major losses while Luke trains with Yoda. Darth Vader reveals shocking truths to Luke.",
+  "active": true,
+  "rating": 8.7,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 134,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode VI – Return of the Jedi",
+  "year": 1983,
+  "date": "1983-05-25",
+  "ageLimit": "10+",
+  "length": "2h 11m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Luke confronts Darth Vader and the Emperor to save the galaxy while the Rebel Alliance launches a final attack on the Empire.",
+  "active": true,
+  "rating": 8.3,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 135,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode VII – The Force Awakens",
+  "year": 2015,
+  "date": "2015-12-18",
+  "ageLimit": "10+",
+  "length": "2h 16m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Thirty years after the defeat of the Empire, a new threat emerges in the form of the First Order, and a young scavenger, Rey, discovers her destiny.",
+  "active": true,
+  "rating": 7.8,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 136,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode VIII – The Last Jedi",
+  "year": 2017,
+  "date": "2017-12-15",
+  "ageLimit": "10+",
+  "length": "2h 32m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Rey develops her newly discovered abilities while the Resistance prepares for battle with the First Order.",
+  "active": true,
+  "rating": 7,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 137,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Star Wars: Episode IX – The Rise of Skywalker",
+  "year": 2019,
+  "date": "2019-12-20",
+  "ageLimit": "10+",
+  "length": "2h 22m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The surviving Resistance faces the First Order once more as Rey’s journey culminates in the final battle with Emperor Palpatine.",
+  "active": true,
+  "rating": 6.6,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 138,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Rogue One: A Star Wars Story",
+  "year": 2016,
+  "date": "2016-12-16",
+  "ageLimit": "10+",
+  "length": "2h 13m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "A group of unlikely heroes band together to steal the plans for the Death Star, setting up the events of Episode IV.",
+  "active": true,
+  "rating": 7.8,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 139,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Solo: A Star Wars Story",
+  "year": 2018,
+  "date": "2018-05-25",
+  "ageLimit": "10+",
+  "length": "2h 15m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The origin story of Han Solo, showing his early adventures, meeting Chewbacca, and acquiring the Millennium Falcon.",
+  "active": true,
+  "rating": 6.9,
+  "collection": "Star Wars Series"
+},
+{
+  "_id": 140,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "The Vampire Diaries",
+  "year": 2009,
+  "date": "2009-09-10",
+  "ageLimit": "16+",
+  "length": "42m per episode",
+  "category": [
+    "Drama",
+    "Fantasy",
+    "Romance",
+    "Horror"
+  ],
+  "type": "Series",
+  "description": "A teenage girl falls in love with a vampire and is caught in a supernatural love triangle involving two vampire brothers, uncovering dark secrets in Mystic Falls.",
+  "active": true,
+  "rating": 8.2,
+  "collection": "The Vampire Diaries Series",
+  "seasons": [
+    {
+      "seasonNumber": 1,
+      "episodesCount": 22,
+      "year": 2009,
+      "description": "Introduction to Mystic Falls and the Salvatore brothers."
+    },
+    {
+      "seasonNumber": 2,
+      "episodesCount": 22,
+      "year": 2010,
+      "description": "The threat of Katherine and the Originals emerges."
+    },
+    {
+      "seasonNumber": 3,
+      "episodesCount": 22,
+      "year": 2011,
+      "description": "Klaus and the Original vampires become central."
+    },
+    {
+      "seasonNumber": 4,
+      "episodesCount": 23,
+      "year": 2012,
+      "description": "Transition to college and new supernatural challenges."
+    },
+    {
+      "seasonNumber": 5,
+      "episodesCount": 22,
+      "year": 2013,
+      "description": "The Founder's Council and time jump arcs."
+    },
+    {
+      "seasonNumber": 6,
+      "episodesCount": 22,
+      "year": 2014,
+      "description": "Doppelgänger secrets and new threats."
+    },
+    {
+      "seasonNumber": 7,
+      "episodesCount": 22,
+      "year": 2015,
+      "description": "Power struggles and family revelations."
+    },
+    {
+      "seasonNumber": 8,
+      "episodesCount": 16,
+      "year": 2016,
+      "description": "The final season concludes the Mystic Falls saga."
+    }
+  ]
+},
+{
+  "_id": 141,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men",
+  "year": 2000,
+  "date": "2000-07-14",
+  "ageLimit": "13+",
+  "length": "1h 44m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Mutants with extraordinary powers come together to fight for survival and protect a world that fears them.",
+  "active": true,
+  "rating": 7.4,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 142,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X2: X-Men United",
+  "year": 2003,
+  "date": "2003-05-02",
+  "ageLimit": "13+",
+  "length": "2h 4m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The X-Men must join forces with their enemies to stop William Stryker, who plans to eradicate all mutants.",
+  "active": true,
+  "rating": 7.5,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 143,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men: The Last Stand",
+  "year": 2006,
+  "date": "2006-05-26",
+  "ageLimit": "13+",
+  "length": "1h 44m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "A cure for mutation is discovered, causing division among mutants and the X-Men, while Magneto plans a war against humans.",
+  "active": true,
+  "rating": 6.7,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 144,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men: First Class",
+  "year": 2011,
+  "date": "2011-06-03",
+  "ageLimit": "13+",
+  "length": "2h 12m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The origins of the X-Men and the rivalry between Charles Xavier and Erik Lehnsherr are explored during the Cuban Missile Crisis.",
+  "active": true,
+  "rating": 7.7,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 145,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men: Days of Future Past",
+  "year": 2014,
+  "date": "2014-05-23",
+  "ageLimit": "13+",
+  "length": "2h 11m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Wolverine is sent back in time to prevent an event that would lead to doom for both mutants and humans.",
+  "active": true,
+  "rating": 8,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 146,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men: Apocalypse",
+  "year": 2016,
+  "date": "2016-05-27",
+  "ageLimit": "13+",
+  "length": "2h 24m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "The ancient mutant Apocalypse awakens and plans to rule the world, forcing the X-Men to unite to stop him.",
+  "active": true,
+  "rating": 6.9,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 147,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "X-Men: Dark Phoenix",
+  "year": 2019,
+  "date": "2019-06-07",
+  "ageLimit": "13+",
+  "length": "1h 54m",
+  "category": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Jean Grey's powers spiral out of control, and the X-Men must save her from herself and prevent a cosmic disaster.",
+  "active": true,
+  "rating": 6.1,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 148,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Deadpool",
+  "year": 2016,
+  "date": "2016-02-12",
+  "ageLimit": "16+",
+  "length": "1h 48m",
+  "category": [
+    "Action",
+    "Comedy",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "A former Special Forces operative gains accelerated healing powers and adopts a mercenary persona with a twisted sense of humor.",
+  "active": true,
+  "rating": 8,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 149,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Deadpool 2",
+  "year": 2018,
+  "date": "2018-05-18",
+  "ageLimit": "16+",
+  "length": "2h 0m",
+  "category": [
+    "Action",
+    "Comedy",
+    "Sci-Fi"
+  ],
+  "type": "Movie",
+  "description": "Deadpool assembles a team to protect a young mutant from a time-traveling soldier while delivering humor and chaos everywhere.",
+  "active": true,
+  "rating": 7.7,
+  "collection": "X-Men Series"
+},
+{
+  "_id": 150,
+  "titleImg": "",
+  "bgImg": "",
+  "reviewImg": "",
+  "title": "Red Notice",
+  "year": 2021,
+  "date": "2021-11-12",
+  "ageLimit": "13+",
+  "length": "1h 58m",
+  "category": [
+    "Action",
+    "Comedy",
+    "Crime"
+  ],
+  "type": "Movie",
+  "description": "An Interpol agent tracks the world's most wanted art thief, leading to a globe-trotting adventure full of deception, heists, and unlikely alliances.",
+  "active": true,
+  "rating": 6.3,
+  "collection": "Red Notice"
+}
+
+];
 
 export default moviesData;
