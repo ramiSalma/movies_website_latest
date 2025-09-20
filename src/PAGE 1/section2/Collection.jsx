@@ -4,7 +4,7 @@ import { StarIcon as StarSolidIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import ShinyText from "../../SHINY-TEXT/ShinyText";
 
-const Collection = ({ title, items = [], collectionId }) => {
+const Collection = ({ title, items = []}) => {
   const carouselRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -160,7 +160,7 @@ const Collection = ({ title, items = [], collectionId }) => {
           {items.map((item, index) => (
             <Link
               key={index}
-              to={`/page2/${item._id}`}
+              to={`/page3/${item.id}`}
               className="relative min-w-[160px] h-48 bg-black/90 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
               onMouseEnter={() => setHoveredItem(index)}
               onMouseLeave={() => setHoveredItem(null)}

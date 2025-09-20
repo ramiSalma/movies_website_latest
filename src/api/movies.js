@@ -1,9 +1,3 @@
-import inceptionbg from "../images/inception-bg.jpeg";
-import darkknightbg from "../images/dark-knight-bg.jpeg"
-import interstellerbg from "../images/intersteller-bg.jpeg";
-import avatarbg from "../images/avatar-bg.jpeg";
-
-
 const moviesData = [{
   "_id": 1,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
