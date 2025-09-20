@@ -8,7 +8,7 @@ const moviesData = [{
   "_id": 1,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
   "bgImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://media.cimanow.cc/wp-content/uploads/2021/01/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Game-of-Thrones-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "reviewImg": "https://platform.vox.com/wp-content/uploads/sites/2/chorus/assets/4229567/game-of-thrones-poster_85627-1920x1200.jpg",
   "video": "videos/got.mp4",
   "title": "Game of Thrones",
   "year": 2011,

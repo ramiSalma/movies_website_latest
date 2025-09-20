@@ -20,7 +20,7 @@ const Page1 = () => {
       <TrendingMovies title="TOP TRENDING" trendKey="trend" />
       <TrendingMovies title="NEW RELEASES" trendKey="latest" />
       <Collection title="Popular Movie Collections" items={MoviesCollection} />
-      <Collection title="Genre" items={MoviesGenre} /> 
+     
       <Cards />
     </div>
   )

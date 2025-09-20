@@ -10,6 +10,7 @@ const MoviesGrid = () => {
   const [data, setData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
   const [search, setSearch] = useState("");
+  const [activeSearch, setActiveSearch] = useState(""); // New state for active search term
   const [category, setCategory] = useState("all");
   const [year, setYear] = useState("all");
 
@@ -25,18 +26,33 @@ const MoviesGrid = () => {
     fontOpticalSizing: "auto",
     fontStyle: "normal",
   };
+
   useEffect(() => {
     setData(moviesData);
     setFilteredData(moviesData);
   }, []);
 
+  // Handle search execution
+  const handleSearch = () => {
+    setActiveSearch(search);
+    setSearch(""); // Clear input after search
+  };
+
+  // Clear all filters
+  const clearAllFilters = () => {
+    setSearch("");
+    setActiveSearch("");
+    setCategory("all");
+    setYear("all");
+  };
+
   useEffect(() => {
     let filtered = data;
 
-    // Search filter
-    if (search) {
+    // Search filter - now uses activeSearch instead of search
+    if (activeSearch) {
       filtered = filtered.filter((m) =>
-        m.title.toLowerCase().includes(search.toLowerCase())
+        m.title.toLowerCase().includes(activeSearch.toLowerCase())
       );
     }
 
@@ -56,7 +72,7 @@ const MoviesGrid = () => {
 
     setFilteredData(filtered);
     setPage(1);
-  }, [search, category, year, data]);
+  }, [activeSearch, category, year, data]); // Changed from 'search' to 'activeSearch'
 
   // Calculate paginated data
   const startIndex = (page - 1) * moviesPerPage;
@@ -76,9 +92,9 @@ const MoviesGrid = () => {
               
               <div className="flex flex-wrap gap-2">
                 <button
-                  onClick={() => setCategory("all")}
+                  onClick={clearAllFilters}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                    category === "all"
+                    category === "all" && year === "all" && !activeSearch
                       ? "bg-red-600 text-white shadow-lg shadow-red-600/25 scale-105"
                       : "bg-black text-gray-300 hover:bg-red-600/20 hover:text-white border border-red-600/50"
                   }`}
@@ -118,23 +134,36 @@ const MoviesGrid = () => {
               </select>
             </div>
 
-            {/* Search Input */}
+            {/* Search Input with Search Icon */}
             <div className="w-full lg:flex-1">
               
               <div className="relative">
-                <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-red-600" />
                 <input
                   type="text"
                   placeholder="Search by movie title..."
                   value={search}
                   onChange={(e) => setSearch(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 bg-black text-white border border-red-600/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 placeholder-gray-400"
+                  className="w-full pl-4 pr-12 py-3 bg-black text-white border border-red-600/50 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600 focus:border-red-600 transition-all duration-300 placeholder-gray-400"
                 />
+                <button
+                  onClick={handleSearch}
+                  className="absolute right-2 top-1/2 transform -translate-y-1/2 p-2 hover:bg-red-600/20 rounded-lg transition-all duration-300"
+                >
+                  <MagnifyingGlassIcon className="w-5 h-5 text-red-600 hover:text-red-400" />
+                </button>
               </div>
             </div>
           </div>
 
-         
+          {/* Active Search Indicator */}
+          {activeSearch && (
+            <div className="mt-4 flex items-center gap-2">
+              <span className="text-gray-400 text-sm">Searching for:</span>
+              <span className="bg-red-600/20 text-red-400 px-3 py-1 rounded-full text-sm border border-red-600/50">
+                "{activeSearch}"
+              </span>
+            </div>
+          )}
         </div>
 
         {/* Movies Grid */}
@@ -189,7 +218,7 @@ const MoviesGrid = () => {
         {/* Enhanced Pagination */}
         {filteredData.length > moviesPerPage && (
           <div className="flex justify-center">
-            <div className=" backdrop-blur-sm rounded-2xl p-4 border border-red-600/30">
+            <div className=" backdrop-blur-sm rounded-2xl p-4 ">
               <Stack spacing={2}>
                 <Pagination
                   count={Math.ceil(filteredData.length / moviesPerPage)}
@@ -236,11 +265,7 @@ const MoviesGrid = () => {
               Try adjusting your search criteria or browse all movies
             </p>
             <button
-              onClick={() => {
-                setSearch("");
-                setCategory("all");
-                setYear("all");
-              }}
+              onClick={clearAllFilters}
               className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg transition-colors duration-300"
             >
               Clear Filters

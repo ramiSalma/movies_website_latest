@@ -32,8 +32,8 @@ const Navbar = () => {
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ease-out ${
           scrolled
-            ? "bg-black/95 backdrop-blur-lg border-b border-red-500/30 shadow-[0_0_30px_rgba(220,38,38,0.3)]"
-            : "bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm"
+            ? "bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm border-b border-red-500/30 shadow-[0_0_30px_rgba(220,38,38,0.3)]"
+            : "border border-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 py-3">
@@ -108,12 +108,12 @@ const Navbar = () => {
 
               {/* Auth Buttons - Desktop */}
               <div className="hidden md:flex items-center gap-3">
-                <button className="px-5 py-2.5 border-2 border-white/30 rounded-full text-white font-medium hover:border-red-500 hover:text-red-400 hover:bg-red-500/10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <Link to='/signin' className="px-5 py-2.5 border-2 border-white/30 rounded-full text-white font-medium hover:border-red-500 hover:text-red-400 hover:bg-red-500/10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Sign In
-                </button>
-                <button className="px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium rounded-full hover:from-red-700 hover:to-red-800 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300">
+                </Link>
+                <Link to='/signup' className="px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium rounded-full hover:from-red-700 hover:to-red-800 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300">
                   Sign Up
-                </button>
+                </Link>
               </div>
 
               {/* Mobile Menu Toggle */}
@@ -151,9 +151,9 @@ const Navbar = () => {
                 
                 {/* Mobile Auth Buttons */}
                 <div className="pt-4 space-y-3 border-t border-white/10 mt-4">
-                  <button className="w-full px-4 py-3 border border-white/30 rounded-lg text-white font-medium hover:border-red-500 hover:text-red-400 transition-all duration-300">
+                  <Link to="/login" className="w-full px-4 py-3 border border-white/30 rounded-lg text-white font-medium hover:border-red-500 hover:text-red-400 transition-all duration-300">
                     Sign In
-                  </button>
+                  </Link>
                   <button className="w-full px-4 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-300">
                     Sign Up
                   </button>

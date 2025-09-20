@@ -1,5 +1,2 @@
-
-const withLogger = (WrappedComponent) => (props) => {
-  console.log(`Rendering ${WrappedComponent.name}`);
-  return <WrappedComponent {...props} />;
-};
+const props = undefined;
+return <Component {...props} />;
