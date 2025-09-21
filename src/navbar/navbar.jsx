@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import Footer from "../footer/Footer";
-import logo from "../images/logo.png";
+import logo2 from "../images/logo2.png";
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
   const location = useLocation();
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -15,13 +16,16 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Movies", path: "/movies" },
     { name: "TV Shows", path: "/tvshows" },
-    { name: "About", path: "/about" },
+    { name: "About", path: "/linkedin.com/in/salma-rami-55a11a349" },
   ];
+
   const isActive = (path) => location.pathname === path;
+
   return (
     <>
       <nav
@@ -33,15 +37,16 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex items-center justify-between">
             {/* Logo Section */}
-            <div className="flex items-center group">
+            <div className="flex items-center group h-16">
               <Link to="/home" className="flex items-center">
                 <img
-                  src={logo}
+                  src={logo2}
                   alt="Logo"
-                  className="h-16 transition-all duration-300 group-hover:scale-110 drop-shadow-lg"
+                  className="h-20 transition-all duration-300 group-hover:scale-110 drop-shadow-lg"
                 />
               </Link>
             </div>
+
             {/* Desktop Navigation Links */}
             <div className="hidden lg:flex items-center space-x-1">
               {navItems.map((item, index) => (
@@ -59,29 +64,19 @@ const Navbar = () => {
                 </Link>
               ))}
             </div>
-            {/* Right Section - Search & Auth */}
+
+            {/* Right Section - Auth & Mobile Menu */}
             <div className="flex items-center gap-3">
-              {/* Search Section */}
-              <div className="relative">
-                <button
-                  onClick={() => setSearchOpen(!searchOpen)}
-                  className={`p-3 rounded-full transition-all duration-300 ${searchOpen
-                      ? "bg-red-500/20 text-red-400 scale-110"
-                      : "bg-white/10 text-white hover:bg-red-500/20 hover:text-red-400 hover:scale-110"
-                    }`}
-                >
-                  <MagnifyingGlassIcon className="h-5 w-5" />
-                </button>
-              </div>
               {/* Auth Buttons - Desktop */}
               <div className="hidden md:flex items-center gap-3">
-                <Link to='/signin' className="px-5 py-2.5 border-2 border-white/30  text-white font-medium hover:border-red-500 hover:text-red-400 hover:bg-red-500/10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+                <Link to='/signin' className="px-5 py-2.5 border-2 border-white/30 text-white font-medium hover:border-red-500 hover:text-red-400 hover:bg-red-500/10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   Sign In
                 </Link>
-                <Link to='/signup' className="px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium  hover:from-red-700 hover:to-red-800 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300">
+                <Link to='/signup' className="px-5 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium hover:from-red-700 hover:to-red-800 hover:scale-105 hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300">
                   Sign Up
                 </Link>
               </div>
+
               {/* Mobile Menu Toggle */}
               <button
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -95,6 +90,7 @@ const Navbar = () => {
               </button>
             </div>
           </div>
+
           {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="lg:hidden mt-4 pb-4 border-t border-white/10">
@@ -114,17 +110,18 @@ const Navbar = () => {
                 ))}
                 {/* Mobile Auth Buttons */}
                 <div className="pt-4 space-y-3 border-t border-white/10 mt-4">
-                  <Link to="/login" className="w-full px-4 py-3 border border-white/30 rounded-lg text-white font-medium hover:border-red-500 hover:text-red-400 transition-all duration-300">
+                  <Link to="/signin" className="block w-full px-4 py-3 border border-white/30 rounded-lg text-white font-medium hover:border-red-500 hover:text-red-400 transition-all duration-300 text-center">
                     Sign In
                   </Link>
-                  <button className="w-full px-4 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-300">
+                  <Link to="/signup" className="block w-full px-4 py-3 bg-gradient-to-r from-red-600 to-red-700 text-white font-medium rounded-lg hover:from-red-700 hover:to-red-800 transition-all duration-300 text-center">
                     Sign Up
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
           )}
         </div>
+
         {/* Decorative Elements */}
         <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
       </nav>
@@ -133,4 +130,5 @@ const Navbar = () => {
     </>
   );
 };
+
 export default Navbar;

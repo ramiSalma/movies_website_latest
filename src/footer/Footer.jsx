@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logo.png";
+import logo2 from "../images/logo2.png";
 
 const Footer = () => {
   return (
@@ -11,8 +11,8 @@ const Footer = () => {
         {/* Main content */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
           {/* Logo / Branding */}
-          <div className="flex items-center">
-            <img src={logo} className='h-20 drop-shadow-lg' alt="Logo" />
+          <div className="flex items-center h-16">
+            <img src={logo2} className='h-30 drop-shadow-lg' alt="Logo" />
           </div>
           
           {/* Links */}

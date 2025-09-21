@@ -133,7 +133,7 @@ const HeroSection = ({ featuredMovie }) => {
                                     </div>
 
                                     {/* Movie Details Card */}
-                                    <div className="flex-1 space-y-6 mt-15">
+                                    <div className="flex-1 space-y-6 mt-15 backdrop-blur-sm ">
                                         
                                         {/* Additional Info */}
                                         <div className="">
@@ -161,7 +161,7 @@ const HeroSection = ({ featuredMovie }) => {
                                         </div>
 
                                         {/* Description */}
-                                        <div className="bg-black/70 backdrop-blur-sm ">
+                                        <div className="  ">
                                             <h4 className="text-white font-bold text-lg mb-3">Synopsis</h4>
                                             <p className="text-gray-300 leading-relaxed text-sm">
                                                 {featuredMovie.description}

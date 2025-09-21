@@ -1217,7 +1217,7 @@ const moviesData = [
 },
 {
   "_id": 57,
-  "titleImg": "../images/dexter-title.png",
+  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2024/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Dexter-Original-Sin-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
   "bgImg": "https://i.ebayimg.com/images/g/EQsAAOSwgv5ZTlGk/s-l1200.jpg",
   "reviewImg": "https://ntvb.tmsimg.com/assets/p185267_b_h10_aa.jpg?w=960&h=540",
   "video": "videos/dexter-trailer.mp4",
@@ -1258,9 +1258,9 @@ const moviesData = [
 },
 {
   "_id": 59,
-  "titleImg": "../images/dark-title.png",
-  "bgImg": "https://m.media-amazon.com/images/M/MV5BZTE1YTczZWUtNTI5Ny00NzI0LWFmODC Extended UniversetYzZiYzQ3MmRmOWZlXkEyXkFqcGc@._V1_.jpg",
-  "reviewImg": "hhttps://i0.wp.com/333horror.com/wp-content/uploads/2021/02/season-1-wallpaper.jpg",
+  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Dark-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
+  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2017/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Dark-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "reviewImg": "https://i0.wp.com/333horror.com/wp-content/uploads/2021/02/season-1-wallpaper.jpg",
   "video": "videos/dark-trailer.mp4",
   "title": "Dark",
   "year": 2017,
