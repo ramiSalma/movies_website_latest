@@ -21,7 +21,7 @@
   },
   {
     id : 5 ,
-    name: "Star Wars Saga",
+    name: "Star Wars Series",
     image: "https://www.fredzone.org/wp-content/uploads/2010/01/2starwars1024.jpg "
   },
   {
