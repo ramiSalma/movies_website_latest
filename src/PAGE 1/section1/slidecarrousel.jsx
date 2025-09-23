@@ -9,10 +9,23 @@ const ModernSlideCarousel = ({ slides }) => {
   const runningTimeRef = useRef(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
   const timeRunning = 3000;
   const timeAutoNext = 7000;
   let runNextAuto = useRef(null);
+
+  // Check screen size
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
 
   const resetTimeAnimation = () => {
     const runningTimeEl = runningTimeRef.current;
@@ -60,52 +73,55 @@ const ModernSlideCarousel = ({ slides }) => {
   }, []);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-black" style={{ zIndex: 1 }}>
+    <div className="relative w-full h-screen overflow-hidden bg-black" style={{ zIndex: 1 }}>
       {/* Main Carousel Container */}
       <div className="carousel-container relative w-full h-full" ref={carouselRef}>
         <div className="carousel-list relative w-full h-full" ref={listRef}>
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="carousel-item absolute bg-cover bg-center bg-no-repeat rounded-none transition-all duration-1000 ease-in-out"
+              className="carousel-item absolute bg-cover bg-center bg-no-repeat transition-all duration-1000 ease-in-out"
               style={{
                 backgroundImage: `url(${slide.bgImg})`,
                 '--bg-image': `url(${slide.reviewImg || slide.bgImg})`,
-                // Default positioning for carousel items
-                width: '180px',
-                height: '250px',
-                top: '80%',
-                left: '70%',
-                transform: 'translateY(-70%)',
+                // Responsive positioning
+                width: isMobile ? '120px' : '180px',
+                height: isMobile ? '160px' : '250px',
+                top: isMobile ? '75%' : '80%',
+                left: isMobile ? '60%' : '70%',
+                transform: isMobile ? 'translateY(-75%)' : 'translateY(-70%)',
                 borderRadius: '20px',
                 boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)',
                 zIndex: 10,
               }}
             >
-              {/* Background Overlay */}
-              {/* <div className="absolute inset-0 bg-black/40 rounded-inherit" /> */}
-
               {/* Content - Only visible on second item */}
               <MovieContent slide={slide} />
             </div>
           ))}
         </div>
 
-        {/* Navigation Arrows */}
-        <div className="arrows absolute top-80 bottom-0 left-180 right-0 flex justify-between items-center px-8" style={{ zIndex: 40 }}>
+        {/* Navigation Arrows - Responsive */}
+        <div className={`arrows absolute flex justify-between items-center px-4 sm:px-8 ${
+          isMobile ? 'bottom-4 left-0 right-0' : 'top-80 bottom-0 left-180 right-0'
+        }`} style={{ zIndex: 40 }}>
           <button
             onClick={() => showSlider("prev")}
             disabled={isTransitioning}
-            className="w-10 h-10 rounded-full  text-white border-2  text-xl font-bold transition-all duration-500 hover:bg-white hover:text-black hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg"
+            className={`${
+              isMobile ? 'w-12 h-12' : 'w-10 h-10'
+            } rounded-full text-white border-2 border-white/30 hover:border-red-600 text-xl font-bold transition-all duration-500 hover:bg-red-600 hover:text-white hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg backdrop-blur-sm bg-black/30`}
           >
-            <ChevronLeftIcon className="w-6 h-6" />
+            <ChevronLeftIcon className={`${isMobile ? 'w-7 h-7' : 'w-6 h-6'}`} />
           </button>
           <button
             onClick={() => showSlider("next")}
             disabled={isTransitioning}
-            className="w-10 h-10 rounded-full  text-white border-2  text-xl font-bold transition-all duration-500 hover:bg-white hover:text-black hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg"
+            className={`${
+              isMobile ? 'w-12 h-12' : 'w-10 h-10'
+            } rounded-full text-white border-2 border-white/30 hover:border-red-600 text-xl font-bold transition-all duration-500 hover:bg-red-600 hover:text-white hover:scale-110 disabled:opacity-50 flex items-center justify-center shadow-lg backdrop-blur-sm bg-black/30`}
           >
-            <ChevronRightIcon className="w-6 h-6" />
+            <ChevronRightIcon className={`${isMobile ? 'w-7 h-7' : 'w-6 h-6'}`} />
           </button>
         </div>
 
@@ -113,12 +129,26 @@ const ModernSlideCarousel = ({ slides }) => {
         <div className="absolute top-0 left-0 w-full h-1 bg-black/30" style={{ zIndex: 30 }}>
           <div
             ref={runningTimeRef}
-            className="h-full bg-red-600 w-0"
+            className="h-full bg-red-600 w-0 transition-all duration-300"
             style={{
               animation: "runningTime 7s linear 1 forwards"
             }}
           />
         </div>
+
+        {/* Mobile Slide Indicator */}
+        {isMobile && (
+          <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex gap-2" style={{ zIndex: 40 }}>
+            {slides.map((_, index) => (
+              <div
+                key={index}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === currentSlide ? 'bg-red-600 scale-125' : 'bg-white/30'
+                }`}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );

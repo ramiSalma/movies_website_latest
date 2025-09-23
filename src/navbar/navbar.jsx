@@ -20,8 +20,8 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Movies", path: "/movies" },
-    { name: "TV Shows", path: "/tvshows" },
-    { name: "About", path: "/linkedin.com/in/salma-rami-55a11a349" },
+    { name: "series", path: "/series" },
+    { name: "About", path: "linkedin.com/in/salma-rami-55a11a349" },
   ];
 
   const isActive = (path) => location.pathname === path;
