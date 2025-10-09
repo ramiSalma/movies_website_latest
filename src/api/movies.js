@@ -31,6 +31,7 @@ const moviesData = [
     "date": "2021-11-12",
     "ageLimit": "13+",
     "length": "1h 58m",
+    "trailler" : "https://www.youtube.com/watch?v=Pj0wz7zu3Ms" ,
     "category": [
       "Action",
       "Comedy",

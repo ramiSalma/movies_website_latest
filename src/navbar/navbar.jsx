@@ -28,6 +28,7 @@ const Navbar = () => {
 
   return (
     <>
+    <h1 className="text-8xl text-blue-500"> hello this is a test</h1>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ease-out ${scrolled
             ? "bg-gradient-to-b from-black/80 to-transparent backdrop-blur-sm border-b border-red-500/30 shadow-[0_0_30px_rgba(220,38,38,0.3)]"
