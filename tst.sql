@@ -1,0 +1,5 @@
+
+
+SAVEPOINT savepoint_name;
+
+SET TRANSACTION [READ WRITE | READ ONLY];
