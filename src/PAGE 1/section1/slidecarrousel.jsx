@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import './slidecarrousel.css';
+import './SlideCarrousel.css';
 import MovieContent from "./MovieContent";
 
 const ModernSlideCarousel = ({ slides }) => {
