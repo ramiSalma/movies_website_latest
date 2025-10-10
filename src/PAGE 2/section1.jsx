@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-
+import React, { useState } from 'react';
+import { useParams } from 'react-router-dom';
 import moviesData from '../api/movies';
-import ServersSection from './Servers'
-import RelatedMoviesSection from './RelatedMoviesSection'
+import ServersSection from './Servers';
+import RelatedMoviesSection from './RelatedMoviesSection';
 import HeroSection from './HeroSection';
 
 const Section1 = () => {
@@ -11,12 +10,36 @@ const Section1 = () => {
   const featuredMovie = moviesData.find(movie => movie._id === parseInt(id));
   const [selectedServer, setSelectedServer] = useState(0);
 
-  // Mock server data - replace with your actual server endpoints
+  // Configure servers with actual video URLs
   const servers = [
-    { id: 1, name: "Server 1", url: "https://example.com/server1", quality: "HD", status: "online" },
-    { id: 2, name: "Server 2", url: "https://example.com/server2", quality: "4K", status: "online" },
-    { id: 3, name: "Server 3", url: "https://example.com/server3", quality: "HD", status: "offline" },
-    { id: 4, name: "Server 4", url: "https://example.com/server4", quality: "FHD", status: "online" }
+    { 
+      id: 1, 
+      name: "Server 1", 
+      url: featuredMovie?.video, // Use the video from the movie data
+      quality: "HD", 
+      status: featuredMovie?.video ? "online" : "offline" 
+    },
+    { 
+      id: 2, 
+      name: "Server 2", 
+      url: featuredMovie?.video, // You can add alternative video sources
+      quality: "4K", 
+      status: featuredMovie?.video ? "online" : "offline" 
+    },
+    { 
+      id: 3, 
+      name: "Server 3", 
+      url: null, 
+      quality: "HD", 
+      status: "offline" 
+    },
+    { 
+      id: 4, 
+      name: "Server 4", 
+      url: featuredMovie?.video, 
+      quality: "FHD", 
+      status: featuredMovie?.video ? "online" : "offline" 
+    }
   ];
 
   // Get related movies from the same categories
@@ -42,7 +65,7 @@ const Section1 = () => {
           movieCategories.includes(cat)
         );
       })
-      .slice(0, 8); // Limit to 8 related movies
+      .slice(0, 15); // Limit to 8 related movies
   };
 
   const relatedMovies = getRelatedMovies();
@@ -50,7 +73,16 @@ const Section1 = () => {
   if (!featuredMovie) {
     return (
       <div className="min-h-screen bg-black flex items-center justify-center">
-        <div className="text-white text-xl">Movie not found</div>
+        <div className="text-center">
+          <div className="text-red-600 text-6xl mb-4">404</div>
+          <div className="text-white text-xl mb-4">Movie not found</div>
+          <a 
+            href="/" 
+            className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition inline-block"
+          >
+            Go Back Home
+          </a>
+        </div>
       </div>
     );
   }
@@ -58,22 +90,26 @@ const Section1 = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Hero Section */}
-     <HeroSection featuredMovie={featuredMovie} />
-
-
+      <HeroSection featuredMovie={featuredMovie} />
 
       {/* Video Player Section */}
-      <div className="container mx-auto px-4 py-8">
-        <div className="bg-black rounded-2xl p-6 mb-8">
-
-          <ServersSection servers={servers} featuredMovie={featuredMovie} selectedServer={selectedServer} setSelectedServer={setSelectedServer} />
-
+      <div className="container mx-auto px-4 py-8 lg:px-12">
+        <div className=" p-4 lg:p-8 mb-8 ">
+          <ServersSection 
+            servers={servers} 
+            featuredMovie={featuredMovie} 
+            selectedServer={selectedServer} 
+            setSelectedServer={setSelectedServer} 
+          />
         </div>
 
-        <RelatedMoviesSection relatedMovies={relatedMovies} featuredMovie={featuredMovie} />
+        {/* Related Movies */}
+        {relatedMovies.length > 0 && (
+          <RelatedMoviesSection relatedMovies={relatedMovies} featuredMovie={featuredMovie} />
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Section1
+export default Section1;

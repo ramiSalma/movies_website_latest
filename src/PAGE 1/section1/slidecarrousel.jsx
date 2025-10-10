@@ -138,6 +138,7 @@ const ModernSlideCarousel = ({ slides }) => {
 
         {/* Mobile Slide Indicator */}
         {isMobile && (
+          
           <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex gap-2" style={{ zIndex: 40 }}>
             {slides.map((_, index) => (
               <div

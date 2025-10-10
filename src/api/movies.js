@@ -1,3 +1,4 @@
+// import rednotice from '../videos/Red.Notice.2021.HD-1080p.mp4'
 const moviesData = [
   {
     "_id": 1,
@@ -32,6 +33,7 @@ const moviesData = [
     "ageLimit": "13+",
     "length": "1h 58m",
     "trailler" : "https://www.youtube.com/watch?v=Pj0wz7zu3Ms" ,
+    "video" : "" ,
     "category": [
       "Action",
       "Comedy",
@@ -59,6 +61,7 @@ const moviesData = [
       "Thriller",
       "Drama"
     ],
+    "trailler" : "https://www.youtube.com/watch?v=_InqQJRqGW4" ,
     "type": "Series",
     "description": "A criminal mastermind, The Professor, plans the biggest heist in history, recruiting eight people with unique skills.",
     "active": true,
@@ -81,6 +84,7 @@ const moviesData = [
       "Comedy",
       "Drama"
     ],
+    "trailler" : "https://www.youtube.com/watch?v=gmRKv7n2If8" ,
     "type": "Movie",
     "description": "Young Estella navigates 1970s London, aspiring to become a fashion designer. As she grows, her rebellious and cunning nature emerges, leading her to embrace her alter ego, Cruella, in a world of high fashion, rivalry, and personal ambition.",
     "active": true
@@ -101,6 +105,7 @@ const moviesData = [
       "Adventure",
       "DC Extended Universe"
     ],
+    "trailler" : "https://www.youtube.com/watch?v=CmRih_VtVAs" ,
     "type": "Movie",
     "description": "A secret government agency recruits imprisoned supervillains for dangerous missions in exchange for commuted sentences.",
     "active": true,
@@ -3568,6 +3573,7 @@ const moviesData = [
     "length": "1h 40m",
     "category": ["Horror", "Supernatural", "Thriller"],
     "type": "Movie",
+    "trailler" : "https://www.youtube.com/watch?v=bjqEWgDVPe0" ,
     "description": "A harmless game of truth or dare turns deadly when a sinister force punishes the players.",
     "active": true,
     "rating": 5.2,

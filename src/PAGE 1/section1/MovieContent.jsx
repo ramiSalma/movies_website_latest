@@ -19,7 +19,7 @@ const MovieContent = ({ slide }) => {
 
           {/* Title Logo (if available) */}
           {slide.titleImg && (
-            <div className="mb-6 animate-slide-in-2 opacity-0">
+            <div className="mb-4 animate-slide-in-2 opacity-0">
               <img
                 src={slide.titleImg}
                 alt={slide.title}
