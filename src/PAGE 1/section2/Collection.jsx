@@ -81,9 +81,9 @@ const Collection = ({ title, items = []}) => {
   }
 
   return (
-    <div className="w-full min-h-80 text-left flex gap-10 px-10 py-8 bg-black rounded-2xl shadow-xl">
+  <div className="w-full min-h-80 text-left flex gap-16 px-16 py-12 bg-black rounded-2xl shadow-xl">
       {/* Title + Info */}
-      <div className="flex w-1/4 flex-col justify-between pl-6 pb-4">
+  <div className="flex w-1/4 xl:w-1/5 flex-col justify-between pl-8 pb-6">
         <div>
           <h2
             style={fontStyle}
@@ -113,7 +113,7 @@ const Collection = ({ title, items = []}) => {
       </div>
 
       {/* Enhanced Carousel */}
-      <div className="relative w-3/4 group">
+  <div className="relative w-3/4 xl:w-4/5 group">
         
         {/* Navigation Buttons */}
         <button
@@ -150,7 +150,7 @@ const Collection = ({ title, items = []}) => {
         <div
           ref={carouselRef}
           onScroll={checkScrollState}
-          className="flex gap-4 overflow-x-auto pb-4 scrollbar-hide scroll-smooth px-8"
+          className="flex gap-8 overflow-x-auto pb-6 scrollbar-hide scroll-smooth px-12"
           style={{
             scrollBehavior: 'smooth',
             scrollbarWidth: 'none',
@@ -161,7 +161,7 @@ const Collection = ({ title, items = []}) => {
             <Link
               key={index}
               to={`/page3/${item.id}`}
-              className="relative min-w-[160px] h-48 bg-black/90 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
+              className="relative min-w-[220px] xl:min-w-[280px] h-64 xl:h-80 bg-black/90 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
               onMouseEnter={() => setHoveredItem(index)}
               onMouseLeave={() => setHoveredItem(null)}
             >

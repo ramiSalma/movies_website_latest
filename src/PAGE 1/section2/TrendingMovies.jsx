@@ -51,9 +51,9 @@ const TrendingMovies = ({ title, trendKey }) => {
   }, [trending]);
 
   return (
-    <div className="w-full min-h-96 text-left flex gap-10 px-10 py-8 bg-black rounded-2xl shadow-xl">
+  <div className="w-full min-h-[32rem] text-left flex gap-16 px-16 py-12 bg-black rounded-2xl shadow-xl">
       {/* Title + Info Section */}
-      <div className="flex w-1/4 flex-col justify-between pt-4 pb-10 pl-8">
+  <div className="flex w-1/4 xl:w-1/5 flex-col justify-between pt-8 pb-12 pl-12">
         <div>
           <h2
             style={fontStyle}
@@ -78,7 +78,7 @@ const TrendingMovies = ({ title, trendKey }) => {
       </div>
 
       {/* Enhanced Carousel Section */}
-      <div className="relative w-3/4 group">
+  <div className="relative w-3/4 xl:w-4/5 group">
         
         {/* Navigation Buttons */}
         <button
@@ -115,7 +115,7 @@ const TrendingMovies = ({ title, trendKey }) => {
         <div
           ref={scrollRef}
           onScroll={checkScrollState}
-          className="flex flex-nowrap gap-4 overflow-x-auto scrollbar-hide pt-4 pb-6 px-8 scroll-smooth"
+          className="flex flex-nowrap gap-8 overflow-x-auto scrollbar-hide pt-8 pb-8 px-12 scroll-smooth"
           style={{
             scrollBehavior: 'smooth',
             scrollbarWidth: 'none',
@@ -126,7 +126,7 @@ const TrendingMovies = ({ title, trendKey }) => {
             <Link
               key={movie._id}
               to={`/page2/${movie._id}`}
-              className="relative flex-shrink-0 w-44 h-64 bg-black/90 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer group/card block"
+              className="relative flex-shrink-0 w-64 xl:w-80 h-96 xl:h-[28rem] bg-black/90 rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transform hover:scale-105 hover:-translate-y-2 transition-all duration-500 ease-out cursor-pointer group/card block"
               onMouseEnter={() => setHoveredMovie(movie._id)}
               onMouseLeave={() => setHoveredMovie(null)}
             >
@@ -142,7 +142,7 @@ const TrendingMovies = ({ title, trendKey }) => {
               {movie.trend === true && (
                 <div className="absolute bottom-0 left-0 z-10">
                   <span 
-                    className="text-white text-5xl font-black leading-none select-none"
+                    className="text-white text-6xl xl:text-7xl font-black leading-none select-none"
                     style={{
                       WebkitTextStroke: '2px #dc2626',
                       WebkitTextFillColor: 'transparent',
@@ -161,22 +161,22 @@ const TrendingMovies = ({ title, trendKey }) => {
               }`}>
                 
                 {/* Movie Details */}
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-4 group-hover/card:translate-y-0 transition-transform duration-500 ease-out">
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-4 group-hover/card:translate-y-0 transition-transform duration-500 ease-out">
                   
                   {/* Movie Title */}
-                  <h3 className="text-sm font-bold mb-2 line-clamp-2">
+                  <h3 className="text-lg xl:text-2xl font-bold mb-2 line-clamp-2">
                     {movie.title}
                   </h3>
                   
                   {/* Movie Year */}
-                  <p className="text-xs text-gray-300 mb-2">
+                  <p className="text-base xl:text-lg text-gray-300 mb-2">
                     {movie.year}
                   </p>
                   
                   {movie.category && (
-                    <div className="flex flex-wrap gap-1 mb-2">
+                    <div className="flex flex-wrap gap-2 mb-2">
                       {movie.category.slice(0, 2).map((g, i) => (
-                        <span key={i} className="px-2 py-1 bg-red-600/80 text-xs rounded-full">
+                        <span key={i} className="px-3 py-2 bg-red-600/80 text-base xl:text-lg rounded-full">
                           {g}
                         </span>
                       ))}
@@ -188,13 +188,13 @@ const TrendingMovies = ({ title, trendKey }) => {
                 <div className="absolute inset-0 flex items-center justify-center group/play">
                   <div className="relative">
                     <div className="absolute inset-0 bg-red-500/20 rounded-full animate-ping"></div>
-                    <PlayCircleIcon className="relative w-12 h-12 text-white hover:text-red-400 transition-all duration-300 transform group-hover/play:scale-110" />
+                    <PlayCircleIcon className="relative w-16 h-16 xl:w-20 xl:h-20 text-white hover:text-red-400 transition-all duration-300 transform group-hover/play:scale-110" />
                   </div>
                 </div>
               </div>
 
               {/* Subtle Border Glow */}
-              <div className={`absolute inset-0 rounded-xl border-2 transition-all duration-500 ${
+              <div className={`absolute inset-0 rounded-2xl border-2 transition-all duration-500 ${
                 hoveredMovie === movie._id ? 'border-red-500/60' : 'border-transparent'
               }`}></div>
             </Link>

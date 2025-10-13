@@ -2,19 +2,19 @@ import { PlayCircleIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const MovieCard = ({m}) => {
+const MovieCard = ({m, large}) => {
     return (
         <div>
             <div
                 key={m._id}
-                className="group relative bg-black/80 rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-red-600/30 border border-red-600/30 hover:border-red-600"
+                className={`group relative bg-black/80 rounded-xl overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-red-600/30 border border-red-600/30 hover:border-red-600 ${large ? 'w-full h-[420px] md:h-[480px] xl:h-[520px]' : ''}`}
             >
                 {/* Movie Poster */}
-                <div className="relative aspect-[2/3] overflow-hidden">
+                <div className={`relative aspect-[2/3] overflow-hidden ${large ? 'h-[320px] md:h-[400px] xl:h-[440px]' : ''}`}>
                     <img
                         src={m.bgImg}
                         alt={m.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        className={`w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 ${large ? 'rounded-xl' : ''}`}
                     />
 
                     {/* Gradient Overlay */}

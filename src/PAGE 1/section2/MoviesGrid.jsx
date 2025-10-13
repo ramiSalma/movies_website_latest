@@ -80,8 +80,8 @@ const MoviesGrid = () => {
   const paginatedData = filteredData.slice(startIndex, startIndex + moviesPerPage);
 
   return (
-    <div className="min-h-screen bg-black mt-20">
-      <div className="container mx-auto px-10 py-8 text-left">
+    <div className="min-h-screen p-10 bg-black mt-20 w-full">
+      <div className="w-full max-w-none px-4 py-8 text-left">
         
 
         {/* Enhanced Filters Section */}
@@ -168,9 +168,9 @@ const MoviesGrid = () => {
         </div>
 
         {/* Movies Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 md:gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-8 gap-6 mb-12 w-full">
           {paginatedData.map((m) => (
-            <MovieCard key={m._id} m={m} />
+            <MovieCard key={m._id} m={m} large={true} />
           ))}
         </div>
 
