@@ -8,6 +8,7 @@ import Glowline from '../GLOWLINE/Glowline'
 import Cards from '../ElectricBorder/Cards'
 import SlideCarrousel from './section1/slidecarrousel';
 import moviesData from '../api/movies';
+import MovieGenres from '../api/MovieGenre'
 
 
 const Page1 = () => {
@@ -21,6 +22,7 @@ const Page1 = () => {
       <TrendingMovies title="TOP TRENDING" trendKey="trend" />
       <TrendingMovies title="NEW RELEASES" trendKey="latest" />
       <Collection title="Popular Movie Collections" items={MoviesCollection} />
+      <Collection title="movies genre" items={MovieGenres} />
 
       <Cards />
     </div>

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+/* Apply globally */
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+/* Track (background of scrollbar) */
+::-webkit-scrollbar-track {
+  background: black; /* dark gray background */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgb(212, 20, 20); /* black handle */
+  border-radius: 10px; /* rounded edges */
+}
+
+/* Handle when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: #681d1d; /* lighter black when hovered */
+}

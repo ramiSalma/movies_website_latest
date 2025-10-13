@@ -51,27 +51,13 @@ const AuthPage = () => {
   return (
     <div className="min-h-screen mt-20 bg-black flex items-center justify-center p-4">
       {/* Background Effects */}
-      <div className="absolute inset-0 overflow-hidden">
-        {/* Floating Particles */}
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-red-600/30 rounded-full animate-ping"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
-            }}
-          />
-        ))}
-      </div>
+      
 
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="flex flex-col lg:flex-row bg-black/90 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl border border-red-600/20">
           
           {/* Left Side - Branding */}
-          <div className="lg:w-1/2 bg-gradient-to-br from-red-600 via-red-900 to-black p-12 flex flex-col justify-center relative overflow-hidden">
+          <div className="lg:w-1/2 bg-gradient-to-br from-red-500 via-red-900 to-black p-12 flex flex-col justify-center relative overflow-hidden">
            
             
             <div className="relative z-10">
