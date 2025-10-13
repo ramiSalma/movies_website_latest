@@ -82,27 +82,28 @@ const ModernSlideCarousel = ({ slides }) => {
       <div className="carousel-container relative w-full h-full" ref={carouselRef}>
         <div className="carousel-list relative w-full h-full" ref={listRef}>
           {slides.map((slide, index) => {
-            let cardWidth, cardHeight, cardTop, cardLeft, cardTransform;
+            let cardWidth, cardHeight, cardTop, cardLeft, cardTransform, cardMargin;
             if (screenSize === 'mobile') {
               cardWidth = '120px';
               cardHeight = '160px';
               cardTop = '75%';
               cardLeft = '60%';
               cardTransform = 'translateY(-75%)';
+              cardMargin = '10px';
             } else if (screenSize === 'tablet') {
               cardWidth = '200px';
               cardHeight = '280px';
               cardTop = '78%';
               cardLeft = '65%';
               cardTransform = 'translateY(-78%)';
+              cardMargin = '20px';
             } else {
-              // Desktop: make cards much bigger
               cardWidth = '350px';
               cardHeight = '480px';
               cardTop = '80%';
               cardLeft = '70%';
               cardTransform = 'translateY(-90%) translateX(-0%)';
-              
+              cardMargin = '40px';
             }
             // Add margin between cards
             // let cardMargin;
@@ -128,8 +129,7 @@ const ModernSlideCarousel = ({ slides }) => {
                   borderRadius: '20px',
                   boxShadow: '0 25px 50px rgba(0, 0, 0, 0.3)',
                   zIndex: 10,
-                  marginRight: '16px',
-                  
+                  marginRight: cardMargin,
                 }}
               >
                 {/* Content - Only visible on second item */}
