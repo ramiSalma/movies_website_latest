@@ -18,5 +18,5 @@
 
 /* Handle when hovered */
 ::-webkit-scrollbar-thumb:hover {
-  background: #681d1d; /* lighter black when hovered */
+  background: #ef0505; /* lighter black when hovered */
 }
