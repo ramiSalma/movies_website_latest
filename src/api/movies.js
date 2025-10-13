@@ -1,4 +1,4 @@
-// import rednotice from '../videos/Red.Notice.2021.HD-1080p.mp4'
+import rednotice from '../videos/RedNotice.mp4'
 const moviesData = [
   {
     "_id": 1,
@@ -24,16 +24,16 @@ const moviesData = [
   },
   {
     "_id": 150,
-    "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-    "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-    "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+    "titleImg": "https://media2.cimanow.cc/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
+    "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
+    "reviewImg": "https://media2.cimanow.cc/wp-content/uploads/2021/11/%D9%81%D9%8A%D9%84%D9%85-Red-Notice-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg?quality=50",
     "title": "Red Notice",
     "year": 2021,
     "date": "2021-11-12",
     "ageLimit": "13+",
     "length": "1h 58m",
     "trailler" : "https://www.youtube.com/watch?v=Pj0wz7zu3Ms" ,
-    "video" : "" ,
+    "video" : rednotice ,
     "category": [
       "Action",
       "Comedy",
