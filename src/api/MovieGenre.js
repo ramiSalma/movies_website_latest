@@ -1,4 +1,9 @@
+import horror from '../images/horro.png'
 const MovieGenres = [
+  {
+    name: "Horror",
+    image: horror
+  },
   {
     name: "Action",
     image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
@@ -11,10 +16,7 @@ const MovieGenres = [
     name: "Comedy",
     image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
-  {
-    name: "Horror",
-    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
-  },
+  
   {
     name: "Drama",
     image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
