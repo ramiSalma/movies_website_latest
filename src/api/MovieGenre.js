@@ -1,27 +1,27 @@
 const MovieGenres = [
   {
     name: "Action",
-    image: "https://i.pinimg.com/736x/2b/87/2a/2b872a65f893bde94636b314d899cd2d.jpg"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Adventure",
-    image: "https://i.pinimg.com/1200x/f4/bd/d4/f4bdd43c7dbc1e53041e30a8f761bb3c.jpg"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Comedy",
-    image: "https://i.pinimg.com/736x/75/b0/e2/75b0e2a975f6fc83a8d1616fcc5f6635.jpg"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Horror",
-    image: "https://i.pinimg.com/736x/51/70/cd/5170cdcd472b1e896dea535b2032837e.jpg"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Drama",
-    image: "https://i.pinimg.com/736x/27/ef/11/27ef11f040de6e58d9f3e5ccbc76970c.jpg"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Sci-Fi",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Sci-fi_icon.png"
+    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
   },
   {
     name: "Fantasy",

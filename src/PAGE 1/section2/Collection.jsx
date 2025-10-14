@@ -18,19 +18,16 @@ const Collection = ({ title, items = []}) => {
 
   const scrollCarousel = (direction) => {
     if (carouselRef.current) {
-      const scrollAmount = 680; // Width of 4 cards plus gaps (160px * 4 + 16px * 3)
+      // Scroll by ~80% of visible carousel width for large screens so items move neatly
+      const visible = carouselRef.current.clientWidth || 800;
+      const scrollAmount = Math.round(visible * 0.8);
       const currentScroll = carouselRef.current.scrollLeft;
-      const newScroll = direction === 'left' 
-        ? currentScroll - scrollAmount 
-        : currentScroll + scrollAmount;
+      const newScroll = direction === 'left' ? currentScroll - scrollAmount : currentScroll + scrollAmount;
 
-      carouselRef.current.scrollTo({
-        left: newScroll,
-        behavior: 'smooth'
-      });
+      carouselRef.current.scrollTo({ left: newScroll, behavior: 'smooth' });
 
       // Update scroll state after animation
-      setTimeout(checkScrollState, 300);
+      setTimeout(checkScrollState, 350);
     }
   };
 
@@ -81,7 +78,7 @@ const Collection = ({ title, items = []}) => {
   }
 
   return (
-  <div className="w-full min-h-80 text-left flex gap-16 px-16 py-12 bg-black rounded-2xl shadow-xl">
+  <div className="w-full min-h-80 text-left flex gap-20 px-20 py-16 bg-black rounded-2xl shadow-xl xl:px-32 xl:py-20">
       {/* Title + Info */}
   <div className="flex w-1/4 xl:w-1/5 flex-col justify-between pl-8 pb-6">
         <div>
@@ -150,7 +147,7 @@ const Collection = ({ title, items = []}) => {
         <div
           ref={carouselRef}
           onScroll={checkScrollState}
-          className="flex gap-8 overflow-x-auto pb-6 scrollbar-hide scroll-smooth px-12"
+          className="flex gap-10 lg:gap-12 xl:gap-14 overflow-x-auto pb-6 scrollbar-hide scroll-smooth px-12 xl:px-16"
           style={{
             scrollBehavior: 'smooth',
             scrollbarWidth: 'none',
@@ -161,7 +158,7 @@ const Collection = ({ title, items = []}) => {
             <Link
               key={index}
               to={`/page3/${item.id}`}
-              className="relative min-w-[220px] xl:min-w-[280px] h-64 xl:h-80 bg-black/90 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
+              className="relative min-w-[220px] sm:min-w-[260px] md:min-w-[300px] lg:min-w-[340px] xl:min-w-[380px] 2xl:min-w-[420px] h-64 md:h-72 lg:h-80 xl:h-96 bg-black/90 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:shadow-red-500/25 transition-all duration-500 ease-out cursor-pointer group/item flex-shrink-0 transform hover:scale-105 hover:-translate-y-3 block"
               onMouseEnter={() => setHoveredItem(index)}
               onMouseLeave={() => setHoveredItem(null)}
             >
