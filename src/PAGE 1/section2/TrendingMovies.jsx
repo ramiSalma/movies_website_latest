@@ -122,7 +122,7 @@ const TrendingMovies = ({ title, trendKey }) => {
             msOverflowStyle: 'none'
           }}
         >
-          {trending.map((movie, index) => (
+          {trending.reverse().map((movie, index) => (
             <Link
               key={movie._id}
               to={`/page2/${movie._id}`}

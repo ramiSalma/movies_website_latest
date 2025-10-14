@@ -1214,7 +1214,7 @@ const moviesData = [
     "type": "Movie",
     "description": "Legacy sequel to the Naked Gun franchise. Lt. Frank Drebin Jr., played by Liam Neeson, takes center stage in this comedic action thriller. :contentReference[oaicite:0]{index=0}",
     "active": true,
-    "latest": true
+    
   },
   {
     "_id": 57,
@@ -3218,7 +3218,9 @@ const moviesData = [
     "description": "Set in the John Wick universe, a young assassin seeks revenge for the murder of her family while navigating the deadly world of the High Table.",
     "active": true,
     "rating": null,
-    "collection": "John Wick Series"
+    "collection": "John Wick Series" ,
+    "trending" : true ,
+    "latest" : true 
   },
   {
     "_id": 155,

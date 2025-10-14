@@ -101,19 +101,11 @@ const ModernSlideCarousel = ({ slides }) => {
               cardWidth = '350px';
               cardHeight = '480px';
               cardTop = '80%';
-              cardLeft = '70%';
-              cardTransform = 'translateY(-90%) translateX(-0%)';
-              cardMargin = '40px';
+              cardLeft = '0%';
+              cardTransform = 'translateY(-80%)';
+              cardMargin = '80px';
             }
-            // Add margin between cards
-            // let cardMargin;
-            // if (screenSize === 'mobile') {
-            //   cardMargin = '12px';
-            // } else if (screenSize === 'tablet') {
-            //   cardMargin = '20px';
-            // } else {
-            //   cardMargin = '32px';
-            // }
+            
             return (
               <div
                 key={index}
@@ -141,7 +133,7 @@ const ModernSlideCarousel = ({ slides }) => {
 
         {/* Navigation Arrows - Responsive */}
         <div className={`arrows absolute flex justify-between items-center px-4 sm:px-8 ${
-          screenSize === 'mobile' ? 'bottom-4 left-0 right-0' : 'top-80 bottom-0 left-180 right-0'
+          screenSize === 'mobile' ? 'bottom-4 left-0 right-0' : 'top-120 bottom-0 left-180 right-0'
         }`} style={{ zIndex: 40 }}>
           <button
             onClick={() => showSlider("prev")}

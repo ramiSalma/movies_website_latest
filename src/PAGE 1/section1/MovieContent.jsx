@@ -62,7 +62,7 @@ const MovieContent = ({ slide }) => {
               <img
                 src={slide.titleImg}
                 alt={slide.title}
-                className={isMobile ? 'h-24 max-w-xs object-contain' : 'h-60 max-w-md object-contain'}
+                className={isMobile ? 'h-24 max-w-xs object-contain' : 'h-80 max-w-md object-contain'}
               />
             </div>
           )}
