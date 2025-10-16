@@ -2340,7 +2340,7 @@ const moviesData =[{
 {
   "_id": 113,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltAjhdzTdg_DOKovqhuQshyDDJRoWQwbEmA&s": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "bgImg":  "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Maze Runner",
   "year": 2014,
   "date": "2014-09-19",
