@@ -1,3 +1,4 @@
+//last forked
 import rednotice from '../videos/RedNotice.mp4'
 import intro from "../videos/intro.mp4"
 const moviesData =[{
@@ -1989,9 +1990,10 @@ const moviesData =[{
   "active": true
 },
 {
+
   "_id": 97,
   "titleImg": "https://media.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Interstellar-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Interstellar-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2020/06/%D9%81%D9%8A%D9%84%D9%85-Interstellar-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://images.bauerhosting.com/legacy/empire-tmdb/films/157336/images/xu9zaAevzQ5nnrsXN6JcahLnG4i.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80",
   "video": intro,
   "title": "Interstellar",
@@ -2119,7 +2121,7 @@ const moviesData =[{
 {
   "_id": 103,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-The-Matrix-Resurrections-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-The-Matrix-Resurrections-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-The-Matrix-Resurrections-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/12/%D9%81%D9%8A%D9%84%D9%85-The-Matrix-Resurrections-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "The Matrix Resurrections",
   "year": 2021,
@@ -2162,7 +2164,7 @@ const moviesData =[{
 {
   "_id": 105,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/01/%D9%81%D9%8A%D9%84%D9%85-Maleficent-Mistress-of-Evil-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-Maleficent-Mistress-of-Evil-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/10/%D9%81%D9%8A%D9%84%D9%85-Maleficent-Mistress-of-Evil-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/01/%D9%81%D9%8A%D9%84%D9%85-Maleficent-Mistress-of-Evil-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "Maleficent: Mistress of Evil",
   "year": 2019,
@@ -2184,7 +2186,7 @@ const moviesData =[{
 {
   "_id": 106,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Divergent-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Divergent-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Divergent-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-Divergent-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "Divergent",
   "year": 2014,
@@ -2338,8 +2340,7 @@ const moviesData =[{
 {
   "_id": 113,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSltAjhdzTdg_DOKovqhuQshyDDJRoWQwbEmA&s": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-The-Maze-Runner-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Maze Runner",
   "year": 2014,
   "date": "2014-09-19",
@@ -2360,7 +2361,7 @@ const moviesData =[{
 {
   "_id": 114,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Scorch-Trials-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Scorch-Trials-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADSDoQTT2Wd4sDYPS9j9siifAdRAG9KPdFQ&s",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Scorch-Trials-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Maze Runner: Scorch Trials",
   "year": 2015,
@@ -2382,7 +2383,7 @@ const moviesData =[{
 {
   "_id": 115,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Death-Cure-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Death-Cure-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkHUsWLY9MwMh8-896rXyGaSh_oTwAjbuhFQ&s",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/06/%D9%81%D9%8A%D9%84%D9%85-Maze-Runner-The-Death-Cure-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Maze Runner: The Death Cure",
   "year": 2018,
@@ -2404,7 +2405,7 @@ const moviesData =[{
 {
   "_id": 116,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-The-5th-Wave-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-The-5th-Wave-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://m.media-amazon.com/images/M/MV5BMDg1OGUyNDAtM2IwZS00YWMwLWI2MjMtOTZjZTUzNDc0M2QzXkEyXkFqcGc@._V1_.jpg",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/01/%D9%81%D9%8A%D9%84%D9%85-The-5th-Wave-2016-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "The 5th Wave",
   "year": 2016,
@@ -2426,7 +2427,7 @@ const moviesData =[{
 {
   "_id": 117,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2024/04/%D9%81%D9%8A%D9%84%D9%85-Rebel-Moon-Part-Two-The-Scargiver-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2024/04/%D9%81%D9%8A%D9%84%D9%85-Rebel-Moon-Part-Two-The-Scargiver-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrWNKjdS1bwz5_tbo5SklIi0g_RtDx5GO_8w&s",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2024/04/%D9%81%D9%8A%D9%84%D9%85-Rebel-Moon-Part-Two-The-Scargiver-2024-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "The Giver",
   "year": 2014,
@@ -2470,7 +2471,7 @@ const moviesData =[{
 {
   "_id": 119,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-2001-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "The Fast and the Furious",
   "year": 2001,
@@ -2492,7 +2493,7 @@ const moviesData =[{
 {
   "_id": 120,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-2-Fast-2-Furious-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-2-Fast-2-Furious-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-2-Fast-2-Furious-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-2-Fast-2-Furious-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "2 Fast 2 Furious",
   "year": 2003,
@@ -2514,7 +2515,7 @@ const moviesData =[{
 {
   "_id": 121,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-Tokyo-Drift-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-Tokyo-Drift-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-Tokyo-Drift-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fast-and-the-Furious-Tokyo-Drift-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "The Fast and the Furious: Tokyo Drift",
   "year": 2006,
@@ -2536,7 +2537,7 @@ const moviesData =[{
 {
   "_id": 122,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-2009-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Fast & Furious",
   "year": 2009,
@@ -2558,7 +2559,7 @@ const moviesData =[{
 {
   "_id": 123,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Five-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Five-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Five-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Five-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "Fast Five",
   "year": 2011,
@@ -2580,7 +2581,7 @@ const moviesData =[{
 {
   "_id": 124,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-6-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-6-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-6-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Fast-Furious-6-2013-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "Fast & Furious 6",
   "year": 2013,
@@ -2602,7 +2603,7 @@ const moviesData =[{
 {
   "_id": 125,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Furious-7-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Furious-7-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Furious-7-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-Furious-7-2015-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "Furious 7",
   "year": 2015,
@@ -2624,7 +2625,7 @@ const moviesData =[{
 {
   "_id": 126,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fate-of-the-Furious-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2018/04/%D9%81%D9%8A%D9%84%D9%85-The-Fate-of-the-Furious-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2018/04/%D9%81%D9%8A%D9%84%D9%85-The-Fate-of-the-Furious-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/08/%D9%81%D9%8A%D9%84%D9%85-The-Fate-of-the-Furious-2017-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1-1.jpg",
   "title": "The Fate of the Furious",
   "year": 2017,
@@ -2646,7 +2647,7 @@ const moviesData =[{
 {
   "_id": 127,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-F9-The-Fast-Saga-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-F9-The-Fast-Saga-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-F9-The-Fast-Saga-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/06/%D9%81%D9%8A%D9%84%D9%85-F9-The-Fast-Saga-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "F9",
   "year": 2021,
@@ -2668,7 +2669,7 @@ const moviesData =[{
 {
   "_id": 128,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Fast-X-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Fast-X-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Fast-X-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-Fast-X-2023-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "Fast X",
   "year": 2023,
@@ -2910,7 +2911,7 @@ const moviesData =[{
 {
   "_id": 139,
   "titleImg": "",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2018/09/%D9%81%D9%8A%D9%84%D9%85-Solo-A-Star-Wars-Story-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2018/09/%D9%81%D9%8A%D9%84%D9%85-Solo-A-Star-Wars-Story-2018-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-717x1024.jpg?quality=10",
   "reviewImg": "",
   "title": "Solo: A Star Wars Story",
   "year": 2018,
@@ -3005,7 +3006,7 @@ const moviesData =[{
 {
   "_id": 141,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-2000-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-2000-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-2000-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-2000-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X-Men",
   "year": 2000,
@@ -3027,7 +3028,7 @@ const moviesData =[{
 {
   "_id": 142,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X2-X-Men-United-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X2-X-Men-United-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X2-X-Men-United-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X2-X-Men-United-2003-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X2: X-Men United",
   "year": 2003,
@@ -3049,7 +3050,7 @@ const moviesData =[{
 {
   "_id": 143,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-The-Last-Stand-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-The-Last-Stand-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-The-Last-Stand-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-The-Last-Stand-2006-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X-Men: The Last Stand",
   "year": 2006,
@@ -3071,7 +3072,7 @@ const moviesData =[{
 {
   "_id": 144,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-First-Class-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-First-Class-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-First-Class-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-First-Class-2011-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X-Men: First Class",
   "year": 2011,
@@ -3093,7 +3094,7 @@ const moviesData =[{
 {
   "_id": 145,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Days-of-Future-Past-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Days-of-Future-Past-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Days-of-Future-Past-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Days-of-Future-Past-2014-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X-Men: Days of Future Past",
   "year": 2014,
@@ -3137,7 +3138,7 @@ const moviesData =[{
 {
   "_id": 147,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Dark-Phoenix-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Dark-Phoenix-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Dark-Phoenix-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2023/06/%D9%81%D9%8A%D9%84%D9%85-X-Men-Dark-Phoenix-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
   "title": "X-Men: Dark Phoenix",
   "year": 2019,
