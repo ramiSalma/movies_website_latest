@@ -1156,27 +1156,7 @@ const moviesData =[{
   "active": true,
   "latest": true
 },
-{
-  "_id": 54,
-  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2025/07/%D9%81%D9%8A%D9%84%D9%85-How-to-Train-Your-Dragon-2025-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2019/03/%D9%81%D9%8A%D9%84%D9%85-How-to-Train-Your-Dragon-The-Hidden-World-2019-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://static0.moviewebimages.com/wordpress/wp-content/uploads/article/evkgjS87YJyxAttm7AW0s2V6c6Wqj5.jpg",
-  "video": intro,
-  "title": "How to Train Your Dragon",
-  "year": 2025,
-  "date": "2025-06-13",
-  "ageLimit": "PG-13",
-  "length": "≈ 2h",
-  "category": [
-    "Adventure",
-    "Fantasy",
-    "Family"
-  ],
-  "type": "Movie",
-  "description": "Live-action remake/adaptation of the animated trilogy, featuring lands, dragons & classic adventure. :contentReference[oaicite:2]{index=2}",
-  "active": true,
-  "latest": true
-},
+
 {
   "_id": 55,
   "titleImg": "https://images.moviesanywhere.com/d577e1d838fed11b40c8752f943930a8/2be5f3f2-986a-40c3-9ebc-c5b846a441c8.png?r=2x1&w=300",
@@ -1260,7 +1240,7 @@ const moviesData =[{
 {
   "_id": 59,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Dark-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88-1.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2017/12/%D9%85%D8%B3%D9%84%D8%B3%D9%84-Dark-%D8%A7%D9%84%D9%85%D9%88%D8%B3%D9%85-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2eWtMqKEfm3T-HJAq7DwgVk1bgvKvtPkjKQ&s",
   "reviewImg": "https://i0.wp.com/333horror.com/wp-content/uploads/2021/02/season-1-wallpaper.jpg",
   "video": intro,
   "title": "Dark",
@@ -1622,7 +1602,7 @@ const moviesData =[{
 {
   "_id": 78,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Iron-Man-2-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Iron-Man-2-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
+  "bgImg": "https://media2.cimanow.cc/wp-content/uploads/2020/05/%D9%81%D9%8A%D9%84%D9%85-Iron-Man-2-2010-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg?quality=10",
   "reviewImg": "https://wallpapercave.com/wp/wp10220939.jpg",
   "video": intro,
   "title": "Iron Man 2",
