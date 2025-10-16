@@ -3271,28 +3271,7 @@ const moviesData =[{
   "latest": true,
   "video": intro
 },
-{
-  "_id": 155,
-  "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-The-Conjuring-The-Devil-Made-Me-Do-It-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",
-  "bgImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-The-Conjuring-The-Devil-Made-Me-Do-It-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85.jpg",
-  "reviewImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2021/05/%D9%81%D9%8A%D9%84%D9%85-The-Conjuring-The-Devil-Made-Me-Do-It-2021-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%83%D9%88%D9%81%D8%B1.jpg",
-  "title": "The Conjuring: The Devil Made Me Do It",
-  "year": 2021,
-  "date": "2021-06-04",
-  "ageLimit": "16+",
-  "length": "1h 52m",
-  "category": [
-    "Horror",
-    "Mystery",
-    "Thriller"
-  ],
-  "type": "Movie",
-  "description": "Paranormal investigators Ed and Lorraine Warren face one of their most terrifying cases, involving a murder suspect claiming demonic possession.",
-  "active": true,
-  "rating": 6.3,
-  "collection": "The Conjuring Universe",
-  "video": intro
-},
+
 {
   "_id": 156,
   "titleImg": "https://mediacdm.b-cdn.net/wp-content/uploads/2022/11/%D9%81%D9%8A%D9%84%D9%85-Smile-2022-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D9%84%D9%88%D8%AC%D9%88.png",

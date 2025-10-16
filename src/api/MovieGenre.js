@@ -1,5 +1,5 @@
 import horror from '../images/hORROR.png'
-import adc from '../images/adv.png'
+import adv from '../images/adv.png'
 import act from '../images/act.png'
 import comedy from '../images/comedy.png'
 const MovieGenres = [
