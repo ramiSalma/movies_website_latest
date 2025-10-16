@@ -1,20 +1,24 @@
-import horror from '../images/horro.png'
+import horror from '../images/hORROR.png'
+import adc from '../images/adv.png'
+import act from '../images/act.png'
+import comedy from '../images/comedy.png'
 const MovieGenres = [
   {
     name: "Horror",
     image: horror
   },
   {
-    name: "Action",
-    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
+    name: "Adventure",
+    image: adv
   },
   {
-    name: "Adventure",
-    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
+    name: "Action",
+    image: act
   },
+  
   {
     name: "Comedy",
-    image: "https://images.moviesanywhere.com/metaTag/8510da4d77ae351a78908942e5dec42f.jpeg?r=16x9&w=2560"
+    image: comedy
   },
   
   {
